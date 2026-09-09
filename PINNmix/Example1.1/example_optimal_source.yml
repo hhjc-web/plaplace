@@ -1,0 +1,40 @@
+loss_params:
+  lamb: 1.0
+  mu: 1.0
+
+solution_net_params:
+  activation: 'tanh'
+  net_type: 'mlp'
+  net_dim: 3
+  out_dim: 1
+  width_list: [20, 20, 20]
+
+grad_net_params:
+  activation: 'tanh'
+  net_type: 'mlp'
+  net_dim: 3
+  out_dim: 3
+  width_list: [20, 20, 20]
+
+sampler_params:
+  sampler_type: 'spatial'
+  batch_size_domain: 10000
+  batch_size_bound: 5000
+  batch_size_interface: 2000
+  r0: 0.5
+
+testsampler_params:
+  sampler_type: 'spatial'
+  batch_size_domain: 100000
+  batch_size_bound: 1
+  batch_size_interface: 1
+  r0: 0.5
+
+adam_optim_params:
+  lr: 5.0e-4
+  weight_decay: 0.0
+
+train_params:
+  num_epochs: 1
+  perepoch_steps: 10000
+  output_path: '.'
