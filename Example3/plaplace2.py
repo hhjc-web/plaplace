@@ -1,0 +1,373 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Jul 25 17:04:08 2024
+
+@author: USUARIO
+"""
+
+import numpy as np
+import math
+import tensorflow as tf
+from math import ceil, floor
+from tensorflow import keras
+from tensorflow.keras.layers import Input, Dense
+from tensorflow.keras.models import Model, load_model
+from tensorflow import convert_to_tensor
+from tensorflow.keras.optimizers import Adam
+from scipy.optimize import minimize
+from scipy.linalg import cholesky, LinAlgError
+from scipy import sparse
+import json
+import os
+import scipy.io as sio
+
+def load_hparams(file_config):
+    with open(file_config, 'r') as file:
+        config = json.load(file)
+    return config
+
+config = load_hparams('config.json')
+
+seed = config["seed"]["seed"]  # Seed
+
+# --------------- rotnet Architecture hyperparameters ----------------------------------
+rot_neurons = config["rot_architecture_hparams"]["neurons"]  # Neurons in every hidden layer
+rot_layers = config["rot_architecture_hparams"]["layers"]  # Hidden layers
+rot_output_dim = config["rot_architecture_hparams"]["output_dim"]  # Output dimension
+# -------------------------------------------------------------------------------
+
+# -------------- Adam hyperparameters -------------------------------------------
+Adam_epochs = config["Adam2_hparams"]["Adam_epochs"]  # Adam epochs
+lr0 = config["Adam2_hparams"]["lr0"]  # Initial learning rate (We consider an exponential lr schedule)
+decay_steps = config["Adam2_hparams"]["decay_steps"]  # Decay steps
+decay_rate = config["Adam2_hparams"]["decay_rate"]  # Decay rate
+b1 = config["Adam2_hparams"]["b1"]  # beta1
+b2 = config["Adam2_hparams"]["b2"]  # beta2
+epsilon = config["Adam2_hparams"]["epsilon"]  # epsilon
+Nprint_adam = config["Adam2_hparams"]["Nprint_adam"]  # Adam results will be printed and save every Nprint_adam iters
+# ------------------------------------------------------------------------------
+
+# ------------ Batch hyperparameters -------------------------------------------
+Nint = config["batch_hparams"]["Nint"]  # Number of points at batch
+Nbdy = config["batch_hparams"]["Nbdy"]  # Number of points at batch
+Nchange = config["batch_hparams"]["Nchange"]  # Batch is changed every Nchange iterations
+x0 = config["batch_hparams"]["x0"]  # x0 (minimum value of x)
+Lx = config["batch_hparams"]["Lx"]  # Lx (length in the x direction)
+# ------------------------------------------------------------------------------
+
+# ------------ problem hyperparameters -------------------------------------------
+dim = 3
+domain_size = Lx**dim
+bdy_size = 2*dim*Lx**(dim-1)
+
+def p(x):
+    result = tf.where(x[:,0:1]>0, 100+0*x[:,0:1], 1.2+0*x[:,0:1])
+    return result
+
+def q(x):
+    return p(x)/(p(x)-1)
+
+# ------------------------------------------------------------------------------
+
+# ------------ Test hyperparameters --------------------------------------
+Nx = config["test_hparams"]["Nx"]  # Number of grid points for test set in x direction
+Ny = config["test_hparams"]["Ny"]  # Number of grid points for test set in y direction
+
+# ------------ Quasi-Newton (QN) hyperparameters -------------------------------
+# Nbfgs = config["bfgs_hparams"]["BFGS_epochs"]  # Number of QN iterations
+# method = config["bfgs_hparams"]["method"]  # Method. See below
+# method_bfgs = config["bfgs_hparams"]["method_bfgs"]  # Quasi-Newton algorithm. See below
+# use_sqrt = config["bfgs_hparams"]["use_sqrt"]  # Use square root of the MSE loss to train
+# use_log = config["bfgs_hparams"]["use_log"]  # Use log of the MSE loss to train
+# Nprint_bfgs = config["bfgs_hparams"]["Nprint_bfgs"]  # QN results will be printed and save every Nprint_adam iters
+
+# In method, you can choose between:
+# -BFGS: Here, we include BFGS and the different self-scaled QN methods.
+#        To distinguish between these algorithms, we use method_bfgs. See below
+# -bfgsr: Personal implementation of the factored BFGS Hessian approximations.
+#         See https://ccom.ucsd.edu/reports/UCSD-CCoM-22-01.pdf for details
+#         Very slow, to be optimized.
+# -bfgsz: Personal implementation of the factored inverse BFGS Hessian approximations.
+#         See https://ccom.ucsd.edu/reports/UCSD-CCoM-22-01.pdf for details
+#         Comparable with BFGS in terms of speed.
+
+# If method=BFGS, the variable "method_bfgs" chooses the different QN methods.
+# The options for this are (see the modified Scipy optimize script):
+# -BFGS_scipy: The original implementation of BFGS of Scipy
+# -BFGS: Equivalent implementation, but faster (avoid repeated calculations in the BFGS formula)
+# -SSBFGS_AB: The Self-scaled BFGS formula, where the tauk coefficient is calculated with
+#            Al-Baali's formula (Formula 11 of "Unveiling the optimization process in PINNs")
+# -SSBFGS_OL Same, but tauk is calculated with the original choice of Oren and Luenberger (not recommended)
+# -SSBroyden2: Here we use the tauk and phik expressions defined in the paper
+#             (Formulas 13-23 of "Unveiling the optimization process in PINNs")
+# -SSbroyden1: Another possible choice for these parameters (sometimes better, sometimes worse than SSBroyden1)
+
+# ------------------------------------------------------------------------------
+
+xf = x0 + Lx
+
+tf.keras.backend.set_floatx('float64')
+tf.get_logger().setLevel('ERROR')
+tf.keras.utils.set_random_seed(seed)
+
+def activation(x):
+    return 0.1 * tf.where(x > 0, tf.math.log(tf.exp(-x) + 1.0) + x, tf.math.log(tf.exp(x) + 1.0))
+
+custom_objects = {'activation': activation}
+GRAD = load_model('GRAD.keras', custom_objects=custom_objects)
+GRAD.trainable = False
+
+def generate_model(layer_dims):
+    # input (x, y)
+    X_input = Input((layer_dims[0],))
+
+    # first hidden layer
+    X = Dense(layer_dims[1], activation="tanh")(X_input)
+
+    # hidden layer
+    for i in range(2, len(layer_dims) - 1):
+        X = Dense(layer_dims[i], activation="tanh")(X)
+
+    # output layer
+    # X = Dense(layer_dims[-1], activation=None, use_bias=False)(X)
+    X = Dense(layer_dims[-1], activation=None)(X)
+
+    return Model(inputs=X_input, outputs=X)
+
+def generate_inputs(Nint):
+    '''
+
+    Parameters
+    ----------
+    Nint : INTEGER
+        DESCRIPTION.
+        Number of training points in a given batch
+
+    Returns
+    -------
+    X: Batch of points (in Tensorflow format)
+    TYPE : TENSOR
+        DESCRIPTION.
+
+    '''
+    x = (xf - x0) * np.random.rand(Nint) + x0
+    y = (xf - x0) * np.random.rand(Nint) + x0
+    z = (xf - x0) * np.random.rand(Nint) + x0
+    X = np.hstack((x[:, None], y[:, None], z[:, None]))
+    return convert_to_tensor(X)
+
+def generate_test(Nx, Ny):
+    x = np.linspace(x0, xf, Nx)
+    y = np.linspace(x0, xf, Ny)
+    x, y = np.meshgrid(x, y)
+    X = np.hstack((x.flatten()[:, None], y.flatten()[:, None]))
+    return X, x, y
+
+def solution(X):
+    result = tf.reduce_sum(X, axis = 1, keepdims = True)/math.sqrt(3)
+    return result
+
+def gradsolution(X):
+    ugrad = X + 1/math.sqrt(3) - X
+    result = -ugrad
+    return result
+
+def generate_bdy(Nbdy, dim):
+    result = generate_inputs(Nbdy).numpy()
+    for index in range(Nbdy):
+        dimIndex = floor(dim * index / Nbdy)
+        result[index, dimIndex] = 2*(index % 2)-1
+    result = convert_to_tensor(result)
+    u_bdy = solution(result)
+    return convert_to_tensor(result), convert_to_tensor(u_bdy)
+
+def output(model, X):
+    '''
+    Parameters
+    ----------
+    N : TENSORFLOW MODEL
+        PINN model, obtained with generate_model() function
+    X : TENSOR
+        Batch of points (in Tensorflow format)
+    Returns
+    -------
+    u: TENSOR
+        PINN prediction. Fourier
+
+    '''
+    Nout = model(X)
+
+    return Nout
+
+epochs = np.arange(Nprint_adam, Adam_epochs + Nprint_adam, Nprint_adam)
+loss_list = np.zeros(len(epochs))  # loss list
+
+rot_layer_dims = [None] * (rot_layers + 2)
+rot_layer_dims[0] = dim
+for i in range(1, len(rot_layer_dims)):
+    rot_layer_dims[i] = rot_neurons
+rot_layer_dims[-1] = rot_output_dim
+ROT = generate_model(rot_layer_dims)
+
+lr = tf.keras.optimizers.schedules.ExponentialDecay(lr0, decay_steps, decay_rate)
+
+optimizer_rot = Adam(lr, b1, b2, epsilon=epsilon)
+template = 'Epoch {}, loss: {}, error: {}'
+
+epochs = np.arange(Nprint_adam, Adam_epochs + Nprint_adam, Nprint_adam)
+loss_list = np.zeros(len(epochs))  # loss list
+error_list = np.zeros(len(epochs))  # loss list
+error1_list = np.zeros(len(epochs))  # loss list
+error2_list = np.zeros(len(epochs))  # loss list
+
+Xtest, x, y = generate_test(Nx, Ny)
+Xtest = np.hstack((Xtest, 0*Xtest[:,0:1]))
+Xtest = convert_to_tensor(Xtest)
+uexact = gradsolution(Xtest)
+uexact = uexact.numpy()
+
+def loss(GRAD, ROT, X_domain, X_bdy, u_bdy, domain_size, bdy_size):
+    with tf.GradientTape(persistent=True, watch_accessed_variables=False) as gt_u:
+        gt_u.watch(X_domain)
+        u = output(GRAD, X_domain)
+    ugrad = gt_u.gradient(u, X_domain)
+
+    with tf.GradientTape(persistent=True, watch_accessed_variables=False) as gt_v1:
+        gt_v1.watch(X_domain)
+        v1 = output(ROT, X_domain)[:, 0:1]
+    v1grad = gt_v1.gradient(v1, X_domain)
+
+    with tf.GradientTape(persistent=True, watch_accessed_variables=False) as gt_v2:
+        gt_v2.watch(X_domain)
+        v2 = output(ROT, X_domain)[:, 1:2]
+    v2grad = gt_v2.gradient(v2, X_domain)
+
+    with tf.GradientTape(persistent=True, watch_accessed_variables=False) as gt_v3:
+        gt_v3.watch(X_domain)
+        v3 = output(ROT, X_domain)[:, 2:3]
+    v3grad = gt_v3.gradient(v3, X_domain)
+
+    vrot = tf.concat([v3grad[:, 1:2] - v2grad[:, 2:3], v1grad[:, 2:3] - v3grad[:, 0:1], v2grad[:, 0:1] - v1grad[:, 1:2]], axis=1)
+    sigma = ugrad + vrot
+
+    # sigmastar = gradsolution(X_domain)
+    # print(tf.norm(sigma-sigmastar)/tf.norm(sigmastar))
+    ugrad = X_domain + 1/math.sqrt(3) - X_domain
+    loss_pde = (domain_size * tf.reduce_mean(1/q(X_domain) * tf.reduce_sum(sigma**2, axis = 1, keepdims = True)**(q(X_domain)/2))
+                + 0*domain_size * tf.reduce_mean(tf.reduce_sum(sigma*ugrad, axis = 1, keepdims = True)))
+
+    with tf.GradientTape(persistent=True, watch_accessed_variables=False) as gt_u:
+        gt_u.watch(X_bdy)
+        u = output(GRAD, X_bdy)
+    ugrad = gt_u.gradient(u, X_bdy)
+
+    with tf.GradientTape(persistent=True, watch_accessed_variables=False) as gt_v1:
+        gt_v1.watch(X_bdy)
+        v1 = output(ROT, X_bdy)[:, 0:1]
+    v1grad = gt_v1.gradient(v1, X_bdy)
+
+    with tf.GradientTape(persistent=True, watch_accessed_variables=False) as gt_v2:
+        gt_v2.watch(X_bdy)
+        v2 = output(ROT, X_bdy)[:, 1:2]
+    v2grad = gt_v2.gradient(v2, X_bdy)
+
+    with tf.GradientTape(persistent=True, watch_accessed_variables=False) as gt_v3:
+        gt_v3.watch(X_bdy)
+        v3 = output(ROT, X_bdy)[:, 2:3]
+    v3grad = gt_v3.gradient(v3, X_bdy)
+
+    vrot = tf.concat([v3grad[:, 1:2] - v2grad[:, 2:3], v1grad[:, 2:3] - v3grad[:, 0:1], v2grad[:, 0:1] - v1grad[:, 1:2]], axis=1)
+    sigma = ugrad + vrot
+
+    outernormal = (X_bdy + 1.0) / 2.0
+    outernormal = tf.math.ceil(outernormal) + tf.math.floor(outernormal) - 1.0
+
+    loss_bdy = bdy_size * tf.reduce_mean(u_bdy * tf.reduce_sum(sigma * outernormal, axis = 1, keepdims = True))
+
+    return loss_pde + loss_bdy
+
+# ------------------- second Adam TRAINING LOOP ---------------------------------------
+def trainingrot(GRAD, ROT, X_domain, X_bdy, u_bdy, domain_size, bdy_size, optimizer):
+    with tf.GradientTape() as tape:
+        loss_value = loss(GRAD, ROT, X_domain, X_bdy, u_bdy, domain_size, bdy_size)
+    grads = tape.gradient(loss_value, ROT.trainable_variables)
+    optimizer.apply_gradients(zip(grads, ROT.trainable_variables))
+    return loss_value
+
+for i in range(Adam_epochs):
+    X = generate_inputs(Nint)
+    X_bdy, u_bdy = generate_bdy(Nbdy, dim)
+    if (i + 1) % Nprint_adam == 0:
+        loss_value = loss(GRAD, ROT, X, X_bdy, u_bdy, domain_size, bdy_size)
+        with tf.GradientTape(persistent=True, watch_accessed_variables=False) as gt_u:
+            gt_u.watch(Xtest)
+            u = output(GRAD, Xtest)
+        ugrad = gt_u.gradient(u, Xtest)
+
+        with tf.GradientTape(persistent=True, watch_accessed_variables=False) as gt_v1:
+            gt_v1.watch(Xtest)
+            v1 = output(ROT, Xtest)[:, 0:1]
+        v1grad = gt_v1.gradient(v1, Xtest)
+
+        with tf.GradientTape(persistent=True, watch_accessed_variables=False) as gt_v2:
+            gt_v2.watch(Xtest)
+            v2 = output(ROT, Xtest)[:, 1:2]
+        v2grad = gt_v2.gradient(v2, Xtest)
+
+        with tf.GradientTape(persistent=True, watch_accessed_variables=False) as gt_v3:
+            gt_v3.watch(Xtest)
+            v3 = output(ROT, Xtest)[:, 2:3]
+        v3grad = gt_v3.gradient(v3, Xtest)
+
+        vrot = tf.concat([v3grad[:, 1:2] - v2grad[:, 2:3], v1grad[:, 2:3] - v3grad[:, 0:1], v2grad[:, 0:1] - v1grad[:, 1:2]], axis=1)
+        sigma = ugrad + vrot
+
+        utest = sigma.numpy()
+        error = np.mean(np.linalg.norm(utest - uexact, axis=1, keepdims=True)**q(Xtest)) / np.mean(np.linalg.norm(uexact, axis=1, keepdims=True)**q(Xtest))
+        error2 = (np.mean(np.linalg.norm(utest - uexact, axis=1) ** 2)) ** (1 / 2) / (
+            np.mean(np.linalg.norm(uexact, axis=1) ** 2)) ** (1 / 2)
+        error1 = np.mean(np.linalg.norm(utest - uexact, ord=1, axis=1)) / np.mean(np.linalg.norm(uexact, ord=1, axis=1))
+        print("i=", i + 1)
+        print(template.format(i + 1, loss_value, error, error1, error2))
+        loss_list[i // Nprint_adam] = loss_value.numpy()
+        error_list[i // Nprint_adam] = error
+        error1_list[i // Nprint_adam] = error1
+        error2_list[i // Nprint_adam] = error2
+
+    trainingrot(GRAD, ROT, X, X_bdy, u_bdy, domain_size, bdy_size, optimizer_rot)
+
+np.savetxt(f"loss_adam.txt", np.c_[epochs, loss_list, error_list, error1_list, error2_list])
+with tf.GradientTape(persistent=True, watch_accessed_variables=False) as gt_u:
+    gt_u.watch(Xtest)
+    u = output(GRAD, Xtest)
+ugrad = gt_u.gradient(u, Xtest)
+
+with tf.GradientTape(persistent=True, watch_accessed_variables=False) as gt_v1:
+    gt_v1.watch(Xtest)
+    v1 = output(ROT, Xtest)[:, 0:1]
+v1grad = gt_v1.gradient(v1, Xtest)
+
+with tf.GradientTape(persistent=True, watch_accessed_variables=False) as gt_v2:
+    gt_v2.watch(Xtest)
+    v2 = output(ROT, Xtest)[:, 1:2]
+v2grad = gt_v2.gradient(v2, Xtest)
+
+with tf.GradientTape(persistent=True, watch_accessed_variables=False) as gt_v3:
+    gt_v3.watch(Xtest)
+    v3 = output(ROT, Xtest)[:, 2:3]
+v3grad = gt_v3.gradient(v3, Xtest)
+
+vrot = tf.concat([v3grad[:, 1:2] - v2grad[:, 2:3], v1grad[:, 2:3] - v3grad[:, 0:1], v2grad[:, 0:1] - v1grad[:, 1:2]],
+                 axis=1)
+sigma = ugrad + vrot
+
+output_path = '.'
+loss_path = os.path.join(output_path, "loss.mat")
+sio.savemat(loss_path, {"iteration": epochs, "solution_loss": loss_list,
+                        "solution_error": error_list, "solution_error1": error1_list, "solution_error2": error2_list})
+
+utest = sigma.numpy()
+sio.savemat(os.path.join(output_path, "solution" + ".mat"),
+            {"samples": Xtest.numpy(),
+             "optimal_solution": gradsolution(Xtest).numpy(),
+             "pred_solution": utest})
