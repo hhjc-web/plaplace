@@ -1,0 +1,919 @@
+2026-01-24 15:51:07.680432: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-24 15:51:07.724132: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-01-24 15:51:08.577481: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1769241069.462922  916870 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 46557 MB memory:  -> device: 0, name: NVIDIA L40, pci bus id: 0000:b4:00.0, compute capability: 8.9
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1.1/plaplace1.py:440: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+i= 100
+Epoch 100, loss: 4.595587995452142
+i= 200
+Epoch 200, loss: 4.0893193496627775
+i= 300
+Epoch 300, loss: 3.855794328999623
+i= 400
+Epoch 400, loss: 3.878409171728437
+i= 500
+Epoch 500, loss: 3.8373067195938217
+i= 600
+Epoch 600, loss: 3.8285496798373275
+i= 700
+Epoch 700, loss: 3.883715302331718
+i= 800
+Epoch 800, loss: 3.874893222673007
+i= 900
+Epoch 900, loss: 3.8343338039533386
+i= 1000
+Epoch 1000, loss: 3.835470526479554
+3.846662407646795 1
+0.0002686229867623599 1000
+8.791311683733047e-05 2000
+5.8518754867576966e-05 3000
+4.679273399531724e-05 4000
+4.053926331156416e-05 5000
+3.563817492350411e-05 6000
+3.221617457652502e-05 7000
+2.9953407785490653e-05 8000
+2.8337833886774105e-05 9000
+2.689145183826173e-05 10000
+2.5366295030628238e-05 11000
+2.479589843131225e-05 12000
+2.3666796116515258e-05 13000
+2.270308634851473e-05 14000
+2.227463012145739e-05 15000
+2.1925440266284575e-05 16000
+2.1082003509199525e-05 17000
+2.0336143682207506e-05 18000
+2.005185084178818e-05 19000
+1.9629617783329482e-05 20000
+2026-01-24 16:07:00.933683: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-24 16:07:00.979980: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-01-24 16:07:01.820776: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1769242022.685255  935386 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 46557 MB memory:  -> device: 0, name: NVIDIA L40, pci bus id: 0000:b4:00.0, compute capability: 8.9
+/home/ET/thhu/nn/lib/python3.12/site-packages/keras/src/optimizers/base_optimizer.py:857: UserWarning: Gradients do not exist for variables ['dense_3/bias'] when minimizing the loss. If using `model.compile()`, did you forget to provide a `loss` argument?
+  warnings.warn(
+i= 100
+Epoch 100, loss: 1.2375297281399276, error: 0.09157953847520796
+i= 200
+Epoch 200, loss: 1.2110030282448139, error: 0.08709662278648582
+i= 300
+Epoch 300, loss: 1.2031988250466852, error: 0.07158051613113836
+i= 400
+Epoch 400, loss: 1.1904345123558862, error: 0.06788019019691907
+i= 500
+Epoch 500, loss: 1.1576272706967228, error: 0.0632934889326709
+i= 600
+Epoch 600, loss: 1.1554759529259815, error: 0.06092540666600925
+i= 700
+Epoch 700, loss: 1.1640759808820331, error: 0.05754787782354801
+i= 800
+Epoch 800, loss: 1.143834933985399, error: 0.05520585659365922
+i= 900
+Epoch 900, loss: 1.1534847332099365, error: 0.05226492504455721
+i= 1000
+Epoch 1000, loss: 1.1397389029820948, error: 0.0503530846355915
+i= 1100
+Epoch 1100, loss: 1.1379494294269268, error: 0.04777156628835334
+i= 1200
+Epoch 1200, loss: 1.1534781800669476, error: 0.04385740122799017
+i= 1300
+Epoch 1300, loss: 1.1683314494184334, error: 0.04198986784803162
+i= 1400
+Epoch 1400, loss: 1.1417847953991984, error: 0.039659072834619405
+i= 1500
+Epoch 1500, loss: 1.1460556320311808, error: 0.037361716773377504
+i= 1600
+Epoch 1600, loss: 1.1451825835564318, error: 0.03488245275927532
+i= 1700
+Epoch 1700, loss: 1.1452634871849416, error: 0.03283072600633335
+i= 1800
+Epoch 1800, loss: 1.1381745728956019, error: 0.030681563518148287
+i= 1900
+Epoch 1900, loss: 1.1343727049843981, error: 0.029821946415921643
+i= 2000
+Epoch 2000, loss: 1.1253865643963123, error: 0.02693691224730667
+i= 2100
+Epoch 2100, loss: 1.149609923199685, error: 0.024830752908146576
+i= 2200
+Epoch 2200, loss: 1.1448980304042204, error: 0.023156814086687707
+i= 2300
+Epoch 2300, loss: 1.1391140197344738, error: 0.022276880131483948
+i= 2400
+Epoch 2400, loss: 1.1656842551262319, error: 0.021195365138097114
+i= 2500
+Epoch 2500, loss: 1.1214546896157307, error: 0.02065488582778981
+i= 2600
+Epoch 2600, loss: 1.1687989229456746, error: 0.01948586429206674
+i= 2700
+Epoch 2700, loss: 1.1521259846793939, error: 0.01829890479358343
+i= 2800
+Epoch 2800, loss: 1.1295463694402055, error: 0.017727555966263575
+i= 2900
+Epoch 2900, loss: 1.1507991776572801, error: 0.01718568914015244
+i= 3000
+Epoch 3000, loss: 1.1679862625443813, error: 0.01621942188194092
+i= 3100
+Epoch 3100, loss: 1.1726087112907435, error: 0.015906349681796182
+i= 3200
+Epoch 3200, loss: 1.115969703771773, error: 0.015173255517685717
+i= 3300
+Epoch 3300, loss: 1.1460781398724509, error: 0.015421825021650973
+i= 3400
+Epoch 3400, loss: 1.1264004324627768, error: 0.01413702443010957
+i= 3500
+Epoch 3500, loss: 1.1356140151604193, error: 0.013439500269983478
+i= 3600
+Epoch 3600, loss: 1.1444456518691508, error: 0.01325302933666352
+i= 3700
+Epoch 3700, loss: 1.138035474303078, error: 0.013506787950341445
+i= 3800
+Epoch 3800, loss: 1.1393134015890807, error: 0.013225187838976537
+i= 3900
+Epoch 3900, loss: 1.162113608204758, error: 0.01334114492705029
+i= 4000
+Epoch 4000, loss: 1.1373132161030384, error: 0.012893289528095767
+i= 4100
+Epoch 4100, loss: 1.1209889696054127, error: 0.011412649358054477
+i= 4200
+Epoch 4200, loss: 1.1571900513270463, error: 0.011321935848534394
+i= 4300
+Epoch 4300, loss: 1.1160182111299566, error: 0.01097299171583001
+i= 4400
+Epoch 4400, loss: 1.1184948937632504, error: 0.011238145333945848
+i= 4500
+Epoch 4500, loss: 1.1456296625997209, error: 0.010861424916932618
+i= 4600
+Epoch 4600, loss: 1.138886148933261, error: 0.011830000125827876
+i= 4700
+Epoch 4700, loss: 1.143281221564654, error: 0.010627268274604128
+i= 4800
+Epoch 4800, loss: 1.1309645558944679, error: 0.010484196280463532
+i= 4900
+Epoch 4900, loss: 1.1449357492023333, error: 0.01086661432393313
+i= 5000
+Epoch 5000, loss: 1.1458957248761266, error: 0.010399209772574266
+i= 5100
+Epoch 5100, loss: 1.139890670634678, error: 0.010111189429985259
+i= 5200
+Epoch 5200, loss: 1.1508771241920444, error: 0.00949020047100742
+i= 5300
+Epoch 5300, loss: 1.1221488541589426, error: 0.009710219602857414
+i= 5400
+Epoch 5400, loss: 1.1351795097672321, error: 0.009232553078589173
+i= 5500
+Epoch 5500, loss: 1.1455711790542134, error: 0.009443214097966722
+i= 5600
+Epoch 5600, loss: 1.1241967557208878, error: 0.011145043403527236
+i= 5700
+Epoch 5700, loss: 1.13546753458522, error: 0.008922134310125871
+i= 5800
+Epoch 5800, loss: 1.1533468172383696, error: 0.008965155654003788
+i= 5900
+Epoch 5900, loss: 1.1377978788410517, error: 0.009096898984736488
+i= 6000
+Epoch 6000, loss: 1.1451124392822623, error: 0.008903059557599048
+i= 6100
+Epoch 6100, loss: 1.1373219610274707, error: 0.008427640998883622
+i= 6200
+Epoch 6200, loss: 1.1291057240190825, error: 0.008873935034359496
+i= 6300
+Epoch 6300, loss: 1.1140237912245197, error: 0.01058678124826324
+i= 6400
+Epoch 6400, loss: 1.1512799399148654, error: 0.008063732387630392
+i= 6500
+Epoch 6500, loss: 1.1195712080551152, error: 0.008651592046218718
+i= 6600
+Epoch 6600, loss: 1.1456542102423308, error: 0.009163828409387571
+i= 6700
+Epoch 6700, loss: 1.175831371092907, error: 0.007897048393673303
+i= 6800
+Epoch 6800, loss: 1.1051191555993212, error: 0.009043184896473858
+i= 6900
+Epoch 6900, loss: 1.1287358163041978, error: 0.008477497413049354
+i= 7000
+Epoch 7000, loss: 1.1550914208835867, error: 0.007909613902824924
+i= 7100
+Epoch 7100, loss: 1.1566824097834874, error: 0.007544871878343835
+i= 7200
+Epoch 7200, loss: 1.145440283853208, error: 0.007627249717778584
+i= 7300
+Epoch 7300, loss: 1.1432573115723288, error: 0.008412663303371358
+i= 7400
+Epoch 7400, loss: 1.127170017202848, error: 0.0072404348163990565
+i= 7500
+Epoch 7500, loss: 1.1439509685545528, error: 0.007428259267555113
+i= 7600
+Epoch 7600, loss: 1.126311657945198, error: 0.007828016400077707
+i= 7700
+Epoch 7700, loss: 1.1615467858082338, error: 0.007274342349959334
+i= 7800
+Epoch 7800, loss: 1.1502272393703323, error: 0.007293713150544034
+i= 7900
+Epoch 7900, loss: 1.1312195326405048, error: 0.007510587485269378
+i= 8000
+Epoch 8000, loss: 1.1356846136759233, error: 0.007885035307794832
+i= 8100
+Epoch 8100, loss: 1.1320880770033825, error: 0.007119143056058502
+i= 8200
+Epoch 8200, loss: 1.1289786586271338, error: 0.007852070220566594
+i= 8300
+Epoch 8300, loss: 1.1421921011583058, error: 0.0065772735899033265
+i= 8400
+Epoch 8400, loss: 1.1184366852164915, error: 0.007652978353748382
+i= 8500
+Epoch 8500, loss: 1.146353920664977, error: 0.007997250317573739
+i= 8600
+Epoch 8600, loss: 1.1274526381986014, error: 0.007137631184063163
+i= 8700
+Epoch 8700, loss: 1.1330197243088393, error: 0.007647340577916249
+i= 8800
+Epoch 8800, loss: 1.1465412401420763, error: 0.007905431805247994
+i= 8900
+Epoch 8900, loss: 1.127659087965113, error: 0.008177574373749498
+i= 9000
+Epoch 9000, loss: 1.1383446428622752, error: 0.007355494576826957
+i= 9100
+Epoch 9100, loss: 1.1581769801949244, error: 0.007179222930701393
+i= 9200
+Epoch 9200, loss: 1.1312269053552007, error: 0.006547065762142078
+i= 9300
+Epoch 9300, loss: 1.1503096096645105, error: 0.006691247840693429
+i= 9400
+Epoch 9400, loss: 1.1581610406365594, error: 0.007427791938798035
+i= 9500
+Epoch 9500, loss: 1.1613229131778764, error: 0.0072360107863247
+i= 9600
+Epoch 9600, loss: 1.1569215427772412, error: 0.007908715697343721
+i= 9700
+Epoch 9700, loss: 1.1467647819240578, error: 0.0077116733850596
+i= 9800
+Epoch 9800, loss: 1.1297241964700389, error: 0.007114145211781677
+i= 9900
+Epoch 9900, loss: 1.1299915430606235, error: 0.006733454742881524
+i= 10000
+Epoch 10000, loss: 1.143543012730723, error: 0.006241555398098132
+2026-01-24 17:29:59.800078: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-24 17:29:59.843016: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-01-24 17:30:00.698310: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1769247001.596408 1031780 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 869 MB memory:  -> device: 0, name: NVIDIA L40, pci bus id: 0000:b4:00.0, compute capability: 8.9
+/home/ET/thhu/nn/lib/python3.12/site-packages/keras/src/optimizers/base_optimizer.py:857: UserWarning: Gradients do not exist for variables ['dense_3/bias'] when minimizing the loss. If using `model.compile()`, did you forget to provide a `loss` argument?
+  warnings.warn(
+i= 100
+Epoch 100, loss: 1.1574290883666762, error: 0.046595462490784806
+i= 200
+Epoch 200, loss: 1.2171536009580533, error: 0.060498900268911165
+i= 300
+Epoch 300, loss: 1.1582142730296843, error: 0.03479401445675734
+i= 400
+Epoch 400, loss: 1.1615475000453923, error: 0.02116869895631112
+i= 500
+Epoch 500, loss: 1.1384898691005978, error: 0.012589986298732175
+i= 600
+Epoch 600, loss: 1.1402605621023518, error: 0.013428739783941018
+i= 700
+Epoch 700, loss: 1.1496043432258396, error: 0.010888779788014185
+i= 800
+Epoch 800, loss: 1.1327572197542621, error: 0.010310846495565124
+i= 900
+Epoch 900, loss: 1.143282102316516, error: 0.0074363947030488785
+i= 1000
+Epoch 1000, loss: 1.130270465131435, error: 0.010766649376228291
+i= 1100
+Epoch 1100, loss: 1.131183551536328, error: 0.007899871652056039
+i= 1200
+Epoch 1200, loss: 1.1477915909289667, error: 0.007723508946578297
+i= 1300
+Epoch 1300, loss: 1.1633020015476374, error: 0.006784738399043565
+i= 1400
+Epoch 1400, loss: 1.1375196596688908, error: 0.006828333715627051
+i= 1500
+Epoch 1500, loss: 1.1412160074623667, error: 0.006927232134909927
+i= 1600
+Epoch 1600, loss: 1.1408601379767747, error: 0.0055850056011737875
+i= 1700
+Epoch 1700, loss: 1.1435878744722996, error: 0.008652571184424578
+i= 1800
+Epoch 1800, loss: 1.1352078862130595, error: 0.005211579235345801
+i= 1900
+Epoch 1900, loss: 1.130984052103334, error: 0.005215086748909941
+i= 2000
+Epoch 2000, loss: 1.1243302398251582, error: 0.009798727118569077
+i= 2100
+Epoch 2100, loss: 1.148234643197528, error: 0.008963946327257326
+i= 2200
+Epoch 2200, loss: 1.14412223987313, error: 0.005975467011454258
+i= 2300
+Epoch 2300, loss: 1.137428470456609, error: 0.0041509082215254725
+i= 2400
+Epoch 2400, loss: 1.1667881408865606, error: 0.006595517987596815
+i= 2500
+Epoch 2500, loss: 1.1195470697139702, error: 0.008302244213280928
+i= 2600
+Epoch 2600, loss: 1.1673947702311145, error: 0.005421864732813044
+i= 2700
+Epoch 2700, loss: 1.1507120605276961, error: 0.004524355937724482
+i= 2800
+Epoch 2800, loss: 1.1293140091929454, error: 0.004805470199441055
+i= 2900
+Epoch 2900, loss: 1.1506193525289874, error: 0.006153153439078523
+i= 3000
+Epoch 3000, loss: 1.1657604797297865, error: 0.00575703780477762
+i= 3100
+Epoch 3100, loss: 1.1732685145386081, error: 0.009506311305794062
+i= 3200
+Epoch 3200, loss: 1.1153009291500602, error: 0.007560401961997639
+i= 3300
+Epoch 3300, loss: 1.1488232532482976, error: 0.008111457177535366
+i= 3400
+Epoch 3400, loss: 1.125133879180742, error: 0.00307720702458356
+i= 3500
+Epoch 3500, loss: 1.1342664391955943, error: 0.003338970638613208
+i= 3600
+Epoch 3600, loss: 1.1435484936178175, error: 0.004035011933947931
+i= 3700
+Epoch 3700, loss: 1.1376468140329652, error: 0.0054669219062215895
+i= 3800
+Epoch 3800, loss: 1.1390062181360683, error: 0.0031692530822754793
+i= 3900
+Epoch 3900, loss: 1.162435276926185, error: 0.007327269117237535
+i= 4000
+Epoch 4000, loss: 1.1363998973862117, error: 0.004428208729391709
+i= 4100
+Epoch 4100, loss: 1.1227329405020376, error: 0.01128716444329083
+i= 4200
+Epoch 4200, loss: 1.1577721469280922, error: 0.004692371842825569
+i= 4300
+Epoch 4300, loss: 1.11606561310779, error: 0.002724676815249098
+i= 4400
+Epoch 4400, loss: 1.117987948985635, error: 0.004224530956464524
+i= 4500
+Epoch 4500, loss: 1.1459880788597359, error: 0.00882852092695666
+i= 4600
+Epoch 4600, loss: 1.1379502893967839, error: 0.0035118842353229424
+i= 4700
+Epoch 4700, loss: 1.1439652417075603, error: 0.004371382387173572
+i= 4800
+Epoch 4800, loss: 1.1323098382849939, error: 0.006638662789208437
+i= 4900
+Epoch 4900, loss: 1.1447773697848527, error: 0.005027002408192088
+i= 5000
+Epoch 5000, loss: 1.1459164222193063, error: 0.005412206721818506
+i= 5100
+Epoch 5100, loss: 1.1404955300182955, error: 0.008070434705710415
+i= 5200
+Epoch 5200, loss: 1.1496597304477607, error: 0.0044871286813767015
+i= 5300
+Epoch 5300, loss: 1.1210439095793168, error: 0.005978280698324388
+i= 5400
+Epoch 5400, loss: 1.1349442783398176, error: 0.004186308703374605
+i= 5500
+Epoch 5500, loss: 1.1462236980826503, error: 0.008304218554740206
+i= 5600
+Epoch 5600, loss: 1.1262067618068574, error: 0.007235661133782713
+i= 5700
+Epoch 5700, loss: 1.135205451315256, error: 0.0035250743323116474
+i= 5800
+Epoch 5800, loss: 1.1538372000364292, error: 0.005881770145024664
+i= 5900
+Epoch 5900, loss: 1.137374580730783, error: 0.0032107715110549166
+i= 6000
+Epoch 6000, loss: 1.1452037344294947, error: 0.006941208474761844
+i= 6100
+Epoch 6100, loss: 1.1371521088543521, error: 0.004208163469058724
+i= 6200
+Epoch 6200, loss: 1.1294894835904952, error: 0.0042510225441510915
+i= 6300
+Epoch 6300, loss: 1.1138840626286566, error: 0.0050228592258903205
+i= 6400
+Epoch 6400, loss: 1.1512466518049598, error: 0.004871628807787721
+i= 6500
+Epoch 6500, loss: 1.1195847944036106, error: 0.0027054306132435605
+i= 6600
+Epoch 6600, loss: 1.1450763624553428, error: 0.002705659224910265
+i= 6700
+Epoch 6700, loss: 1.1757837028405966, error: 0.0031558871123229123
+i= 6800
+Epoch 6800, loss: 1.1050566219977853, error: 0.002157712028234465
+i= 6900
+Epoch 6900, loss: 1.1285125537232785, error: 0.00725203291330178
+i= 7000
+Epoch 7000, loss: 1.1556535099393128, error: 0.00573611835036284
+i= 7100
+Epoch 7100, loss: 1.1562618039573904, error: 0.003992644350218587
+i= 7200
+Epoch 7200, loss: 1.1460165913349392, error: 0.004073141726762584
+i= 7300
+Epoch 7300, loss: 1.1433968766612033, error: 0.004965531812050398
+i= 7400
+Epoch 7400, loss: 1.1273181576882936, error: 0.004359335179953236
+i= 7500
+Epoch 7500, loss: 1.1436417111293262, error: 0.0023123081172371196
+i= 7600
+Epoch 7600, loss: 1.1254245756827648, error: 0.0030967099930464762
+i= 7700
+Epoch 7700, loss: 1.1609588734303133, error: 0.002205910444775161
+i= 7800
+Epoch 7800, loss: 1.1500536263603973, error: 0.0017915292431507663
+i= 7900
+Epoch 7900, loss: 1.1307835604510235, error: 0.0040519869050145195
+i= 8000
+Epoch 8000, loss: 1.1351775585741797, error: 0.0017299417255012943
+i= 8100
+Epoch 8100, loss: 1.1319639126660113, error: 0.004395741087755947
+i= 8200
+Epoch 8200, loss: 1.129836152167266, error: 0.004912011527387025
+i= 8300
+Epoch 8300, loss: 1.1425226164856208, error: 0.004831161435009561
+i= 8400
+Epoch 8400, loss: 1.1183611328294214, error: 0.005650550259036795
+i= 8500
+Epoch 8500, loss: 1.1462006598713255, error: 0.004053056588046481
+i= 8600
+Epoch 8600, loss: 1.12760696811973, error: 0.004272727201279765
+i= 8700
+Epoch 8700, loss: 1.1316862006375363, error: 0.005088361425805577
+i= 8800
+Epoch 8800, loss: 1.1462848448787981, error: 0.004378548809191077
+i= 8900
+Epoch 8900, loss: 1.1275409891109656, error: 0.004936552157051253
+i= 9000
+Epoch 9000, loss: 1.1381663447603607, error: 0.003019333835763661
+i= 9100
+Epoch 9100, loss: 1.1579667650199863, error: 0.0024915422002008774
+i= 9200
+Epoch 9200, loss: 1.1311969367276025, error: 0.003037276236929499
+i= 9300
+Epoch 9300, loss: 1.1506782377281501, error: 0.0024123027263192828
+i= 9400
+Epoch 9400, loss: 1.1580984969268673, error: 0.004030247424949842
+i= 9500
+Epoch 9500, loss: 1.1619221871759478, error: 0.004205438176878574
+i= 9600
+Epoch 9600, loss: 1.1570469072988594, error: 0.0026796678756743665
+i= 9700
+Epoch 9700, loss: 1.146156639560663, error: 0.001825708723686326
+i= 9800
+Epoch 9800, loss: 1.1304270270689956, error: 0.005338343676367437
+i= 9900
+Epoch 9900, loss: 1.1294152381783875, error: 0.0050331598233941816
+i= 10000
+Epoch 10000, loss: 1.1439307118732012, error: 0.002284439093550375
+2026-01-24 17:39:22.379410: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-24 17:39:22.426365: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-01-24 17:39:23.277879: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1769247564.148599 1042956 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 46557 MB memory:  -> device: 0, name: NVIDIA L40, pci bus id: 0000:b4:00.0, compute capability: 8.9
+/home/ET/thhu/nn/lib/python3.12/site-packages/keras/src/optimizers/base_optimizer.py:857: UserWarning: Gradients do not exist for variables ['dense_5/bias'] when minimizing the loss. If using `model.compile()`, did you forget to provide a `loss` argument?
+  warnings.warn(
+i= 100
+Epoch 100, loss: 2.229077374122789, error: 0.25297964558021496
+i= 200
+Epoch 200, loss: 1.443426855119544, error: 0.11496354509943439
+i= 300
+Epoch 300, loss: 1.2405147548043185, error: 0.08578116064431261
+i= 400
+Epoch 400, loss: 1.1772004890170285, error: 0.04004157154337372
+i= 500
+Epoch 500, loss: 1.1430299962803332, error: 0.032991884510705
+i= 600
+Epoch 600, loss: 1.1482394507288496, error: 0.03032607353604212
+i= 700
+Epoch 700, loss: 1.1541199803958937, error: 0.026137250843445172
+i= 800
+Epoch 800, loss: 1.1322058256243928, error: 0.02139530371586471
+i= 900
+Epoch 900, loss: 1.1450264473278375, error: 0.019860229291288133
+i= 1000
+Epoch 1000, loss: 1.1313919275806943, error: 0.017767148702613533
+i= 1100
+Epoch 1100, loss: 1.1325349392452342, error: 0.017298382752594217
+i= 1200
+Epoch 1200, loss: 1.1473637304817839, error: 0.016087767496092146
+i= 1300
+Epoch 1300, loss: 1.1643605359239022, error: 0.01629636642377676
+i= 1400
+Epoch 1400, loss: 1.138385652887865, error: 0.015106850014630852
+i= 1500
+Epoch 1500, loss: 1.1418241482987153, error: 0.014144086684873347
+i= 1600
+Epoch 1600, loss: 1.1413475050066062, error: 0.013365784978242878
+i= 1700
+Epoch 1700, loss: 1.1425477334154908, error: 0.01272707334625937
+i= 1800
+Epoch 1800, loss: 1.1358013376581308, error: 0.012210249955485739
+i= 1900
+Epoch 1900, loss: 1.1312773496590365, error: 0.011733682784635588
+i= 2000
+Epoch 2000, loss: 1.1235686942783183, error: 0.011507732737498139
+i= 2100
+Epoch 2100, loss: 1.148607706013276, error: 0.010782167620894581
+i= 2200
+Epoch 2200, loss: 1.1438003910333006, error: 0.010026510808879785
+i= 2300
+Epoch 2300, loss: 1.137963734196752, error: 0.009995382956672606
+i= 2400
+Epoch 2400, loss: 1.1659740828316383, error: 0.009952427831251796
+i= 2500
+Epoch 2500, loss: 1.1199899793250443, error: 0.008921335053581687
+i= 2600
+Epoch 2600, loss: 1.1676385782944978, error: 0.0094484240241076
+i= 2700
+Epoch 2700, loss: 1.150520374182389, error: 0.008455554029381904
+i= 2800
+Epoch 2800, loss: 1.1286756627684786, error: 0.008231219455701813
+i= 2900
+Epoch 2900, loss: 1.1507878634079036, error: 0.007753299887486088
+i= 3000
+Epoch 3000, loss: 1.1666552908991865, error: 0.008080580974904125
+i= 3100
+Epoch 3100, loss: 1.1711163392068884, error: 0.007316219839907392
+i= 3200
+Epoch 3200, loss: 1.115844548846484, error: 0.007873673621004024
+i= 3300
+Epoch 3300, loss: 1.1461860125634065, error: 0.0070735862261144524
+i= 3400
+Epoch 3400, loss: 1.125012159374231, error: 0.006787162994671038
+i= 3500
+Epoch 3500, loss: 1.134993100113323, error: 0.006894348861841558
+i= 3600
+Epoch 3600, loss: 1.1439192476396005, error: 0.006085722385767089
+i= 3700
+Epoch 3700, loss: 1.137890174677897, error: 0.00627155447375924
+i= 3800
+Epoch 3800, loss: 1.139135485978528, error: 0.005803387033224914
+i= 3900
+Epoch 3900, loss: 1.1619431027901928, error: 0.00567722288138713
+i= 4000
+Epoch 4000, loss: 1.1367879760087471, error: 0.006038705724738442
+i= 4100
+Epoch 4100, loss: 1.121229557271552, error: 0.006012432306197736
+i= 4200
+Epoch 4200, loss: 1.1569759035028369, error: 0.004990680138061589
+i= 4300
+Epoch 4300, loss: 1.115535089310474, error: 0.004767930103422379
+i= 4400
+Epoch 4400, loss: 1.1186504757303162, error: 0.004474918935702106
+i= 4500
+Epoch 4500, loss: 1.1449690214627464, error: 0.00555915415298991
+i= 4600
+Epoch 4600, loss: 1.1384114485995747, error: 0.00535206926510125
+i= 4700
+Epoch 4700, loss: 1.1429824962367856, error: 0.005306565179931904
+i= 4800
+Epoch 4800, loss: 1.1316302897959947, error: 0.004859934714513922
+i= 4900
+Epoch 4900, loss: 1.1443449161594472, error: 0.005663084641736082
+i= 5000
+Epoch 5000, loss: 1.145571711076022, error: 0.003892824566861052
+i= 5100
+Epoch 5100, loss: 1.1395075443137979, error: 0.004700190387146415
+i= 5200
+Epoch 5200, loss: 1.1502869861296432, error: 0.004330453714108177
+i= 5300
+Epoch 5300, loss: 1.1216737291876395, error: 0.0038142029602856657
+i= 5400
+Epoch 5400, loss: 1.1349833999886247, error: 0.00425595129650017
+i= 5500
+Epoch 5500, loss: 1.1449293118599944, error: 0.0046253260672613865
+i= 5600
+Epoch 5600, loss: 1.1243995386374683, error: 0.0035415297287004267
+i= 5700
+Epoch 5700, loss: 1.1354541577399526, error: 0.003624945657294612
+i= 5800
+Epoch 5800, loss: 1.1530470785042843, error: 0.003964985379876052
+i= 5900
+Epoch 5900, loss: 1.1373148988597868, error: 0.0036690704311408166
+i= 6000
+Epoch 6000, loss: 1.1455457849862176, error: 0.0031921126092469814
+i= 6100
+Epoch 6100, loss: 1.1369161615632273, error: 0.003307730522331691
+i= 6200
+Epoch 6200, loss: 1.12895543130962, error: 0.0030301808588537107
+i= 6300
+Epoch 6300, loss: 1.1136901006577222, error: 0.0031775656858960824
+i= 6400
+Epoch 6400, loss: 1.150944974145158, error: 0.003717091132971016
+i= 6500
+Epoch 6500, loss: 1.1191929756855616, error: 0.003987424658804589
+i= 6600
+Epoch 6600, loss: 1.1452916259589978, error: 0.0034857605360027245
+i= 6700
+Epoch 6700, loss: 1.1753573925403122, error: 0.003265760365919176
+i= 6800
+Epoch 6800, loss: 1.1051855731334481, error: 0.003534536264704495
+i= 6900
+Epoch 6900, loss: 1.1285568151004854, error: 0.004010632040684672
+i= 7000
+Epoch 7000, loss: 1.155103048223459, error: 0.0032121649284966515
+i= 7100
+Epoch 7100, loss: 1.1559422790245257, error: 0.002817071678836711
+i= 7200
+Epoch 7200, loss: 1.1445637672112803, error: 0.002560719771173463
+i= 7300
+Epoch 7300, loss: 1.142976908722551, error: 0.0024633400636543327
+i= 7400
+Epoch 7400, loss: 1.1267433774695539, error: 0.0028338220754218447
+i= 7500
+Epoch 7500, loss: 1.143644928276269, error: 0.003422444683450754
+i= 7600
+Epoch 7600, loss: 1.1256003635645113, error: 0.003478877563582671
+i= 7700
+Epoch 7700, loss: 1.1609597208166738, error: 0.003123324451511928
+i= 7800
+Epoch 7800, loss: 1.1502594631731928, error: 0.003097975615557226
+i= 7900
+Epoch 7900, loss: 1.130675757512823, error: 0.0028425969659381686
+i= 8000
+Epoch 8000, loss: 1.1351999224307323, error: 0.00255698932314052
+i= 8100
+Epoch 8100, loss: 1.1316604405029254, error: 0.0022663359153657684
+i= 8200
+Epoch 8200, loss: 1.1283955089226658, error: 0.003578201763685291
+i= 8300
+Epoch 8300, loss: 1.1413917884008837, error: 0.0026997344420111435
+i= 8400
+Epoch 8400, loss: 1.1184937449377867, error: 0.0030595470166152744
+i= 8500
+Epoch 8500, loss: 1.1464570471543003, error: 0.002969368405912349
+i= 8600
+Epoch 8600, loss: 1.1269423749711887, error: 0.003145340272939407
+i= 8700
+Epoch 8700, loss: 1.1322587959899904, error: 0.004360317557278301
+i= 8800
+Epoch 8800, loss: 1.1458442602067755, error: 0.004421110772240983
+i= 8900
+Epoch 8900, loss: 1.1272729440272449, error: 0.0025072744848590577
+i= 9000
+Epoch 9000, loss: 1.138068023881959, error: 0.0026032895132823393
+i= 9100
+Epoch 9100, loss: 1.157608899897298, error: 0.0032025812080968
+i= 9200
+Epoch 9200, loss: 1.130880535894315, error: 0.00285977763541006
+i= 9300
+Epoch 9300, loss: 1.1506067393817765, error: 0.003419645096629731
+i= 9400
+Epoch 9400, loss: 1.1582016184653723, error: 0.0021563047372526777
+i= 9500
+Epoch 9500, loss: 1.160841380059526, error: 0.0027438516916500786
+i= 9600
+Epoch 9600, loss: 1.1568404230126514, error: 0.0029069658961267957
+i= 9700
+Epoch 9700, loss: 1.1461201944221386, error: 0.0024205265564641275
+i= 9800
+Epoch 9800, loss: 1.1290389990119492, error: 0.0026652900388276996
+i= 9900
+Epoch 9900, loss: 1.1298021043987725, error: 0.002424728197198608
+i= 10000
+Epoch 10000, loss: 1.1435670108176865, error: 0.0024046064033288474
