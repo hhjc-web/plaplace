@@ -1,0 +1,59 @@
+{
+    "seed": {
+        "seed": 2
+    },
+    "problem": {
+        "p": 10
+    },
+    "grad_architecture_hparams": {
+        "neurons": 20,
+        "layers":3,
+        "output_dim": 1
+    },
+    "rot_architecture_hparams": {
+        "neurons": 20,
+        "layers":3,
+        "output_dim": 3
+    },
+    "Adam1_hparams": {
+        "Adam_epochs": 1000,
+        "lr0": 0.005,
+        "decay_steps": 1000,
+        "decay_rate": 0.98,
+        "b1": 0.99,
+        "b2": 0.999,
+        "epsilon": 1e-20,
+        "Nprint_adam": 100
+    },
+    "Adam2_hparams": {
+        "Adam_epochs": 10000,
+        "lr0": 0.005,
+        "decay_steps": 1000,
+        "decay_rate": 0.98,
+        "b1": 0.99,
+        "b2": 0.999,
+        "epsilon": 1e-20,
+        "Nprint_adam": 100
+    },
+    "batch_hparams": {
+        "Nint": 10000,
+        "Nbdy": 10000,
+        "Nchange": 500,
+        "k1": 1.0,
+        "k2": 0.0,
+        "x0": -1.0,
+        "Lx": 2.0
+    },
+    "test_hparams": {
+        "Nx": 99,
+        "Ny": 99
+    },
+    "bfgs_hparams": {
+        "BFGS_epochs": 10000,
+        "method": "BFGS",
+        "method_bfgs": "SSBFGS_AB",
+        "use_sqrt": false,
+        "use_log": false,
+        "Nprint_bfgs": 100
+    }
+}

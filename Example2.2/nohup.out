@@ -1,0 +1,1606 @@
+2025-09-09 15:00:38.963372: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-09-09 15:00:39.006030: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-09-09 15:00:39.866590: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1757401240.675124 2344526 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 46559 MB memory:  -> device: 0, name: NVIDIA L40, pci bus id: 0000:b4:00.0, compute capability: 8.9
+/home/ET/thhu/plaplace/Example1/plaplace2.py:445: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+i= 100
+Epoch 100, loss: 9.855959506086066, error: 0.06129432490845636
+i= 200
+Epoch 200, loss: 8.982878804277489, error: 0.04941013276928766
+i= 300
+Epoch 300, loss: 8.982390656170498, error: 0.03557075035268753
+i= 400
+Epoch 400, loss: 8.674982357867286, error: 0.031152569613050417
+i= 500
+Epoch 500, loss: 8.566853699998065, error: 0.029661071487071183
+i= 600
+Epoch 600, loss: 8.58141903071185, error: 0.027676346237701058
+i= 700
+Epoch 700, loss: 8.56391243211259, error: 0.02857328160990035
+i= 800
+Epoch 800, loss: 8.570318840440379, error: 0.027587184613407773
+i= 900
+Epoch 900, loss: 8.600955191244152, error: 0.027487178645370633
+i= 1000
+Epoch 1000, loss: 8.824297179244278, error: 0.024975521858527208
+i= 1100
+Epoch 1100, loss: 8.609185905297752, error: 0.022931059180076173
+i= 1200
+Epoch 1200, loss: 8.84231253919897, error: 0.021294270479414016
+i= 1300
+Epoch 1300, loss: 8.774734971165254, error: 0.020119736987301153
+i= 1400
+Epoch 1400, loss: 8.739332048101666, error: 0.018768533770143734
+i= 1500
+Epoch 1500, loss: 8.758917620756915, error: 0.01880502955217401
+i= 1600
+Epoch 1600, loss: 8.623418710885721, error: 0.01756007744052528
+i= 1700
+Epoch 1700, loss: 8.589440626913827, error: 0.01644517207101054
+i= 1800
+Epoch 1800, loss: 8.535880793240773, error: 0.01622666091209995
+i= 1900
+Epoch 1900, loss: 8.532960210998276, error: 0.01471371070424509
+i= 2000
+Epoch 2000, loss: 8.526382523389971, error: 0.013754716417247133
+i= 2100
+Epoch 2100, loss: 8.647350730114358, error: 0.013853340401839541
+i= 2200
+Epoch 2200, loss: 8.55525749401198, error: 0.012592071385604456
+i= 2300
+Epoch 2300, loss: 8.699895670905045, error: 0.01534196537238919
+i= 2400
+Epoch 2400, loss: 8.578674852589685, error: 0.013294089962076013
+i= 2500
+Epoch 2500, loss: 8.517899353317501, error: 0.013388253317999923
+i= 2600
+Epoch 2600, loss: 8.710242486668049, error: 0.012168123194376148
+i= 2700
+Epoch 2700, loss: 8.625939588923162, error: 0.014929102993593448
+i= 2800
+Epoch 2800, loss: 8.530763036065013, error: 0.012546055456391335
+i= 2900
+Epoch 2900, loss: 8.596636688267143, error: 0.011949719026570577
+i= 3000
+Epoch 3000, loss: 8.561544816776516, error: 0.011504178322360113
+i= 3100
+Epoch 3100, loss: 8.594316527365047, error: 0.011622626807482186
+i= 3200
+Epoch 3200, loss: 8.495373755463724, error: 0.012236611286644081
+i= 3300
+Epoch 3300, loss: 8.657504943332468, error: 0.012319635255011094
+i= 3400
+Epoch 3400, loss: 8.652863295054138, error: 0.011134288023226633
+i= 3500
+Epoch 3500, loss: 8.599175757716953, error: 0.011321555817664029
+i= 3600
+Epoch 3600, loss: 8.527682430260894, error: 0.01244522147844494
+i= 3700
+Epoch 3700, loss: 8.576750568278094, error: 0.011308080833730107
+i= 3800
+Epoch 3800, loss: 8.645032783098506, error: 0.010093869571194042
+i= 3900
+Epoch 3900, loss: 8.632015788704548, error: 0.011668045338679104
+i= 4000
+Epoch 4000, loss: 8.670884597981416, error: 0.012871496532570673
+i= 4100
+Epoch 4100, loss: 8.550384211500832, error: 0.010299339887785957
+i= 4200
+Epoch 4200, loss: 8.557178992947767, error: 0.010685336080489213
+i= 4300
+Epoch 4300, loss: 8.543769870932822, error: 0.009777568232393907
+i= 4400
+Epoch 4400, loss: 8.522277963538968, error: 0.010435196383525433
+i= 4500
+Epoch 4500, loss: 8.54617743533592, error: 0.010507272793583168
+i= 4600
+Epoch 4600, loss: 8.551409658194343, error: 0.009272760055754411
+i= 4700
+Epoch 4700, loss: 8.542425206048572, error: 0.009337084120568728
+i= 4800
+Epoch 4800, loss: 8.538800660765947, error: 0.008288592213196737
+i= 4900
+Epoch 4900, loss: 8.54822026544798, error: 0.00823148182356569
+i= 5000
+Epoch 5000, loss: 8.53589196579819, error: 0.007882059679619155
+i= 5100
+Epoch 5100, loss: 8.513531106277291, error: 0.008405090041624262
+i= 5200
+Epoch 5200, loss: 8.559691679799254, error: 0.007527822954367311
+i= 5300
+Epoch 5300, loss: 8.51594901423788, error: 0.007509740162130996
+i= 5400
+Epoch 5400, loss: 8.524893732788717, error: 0.006913351237737898
+i= 5500
+Epoch 5500, loss: 8.55927383933151, error: 0.006656879221044325
+i= 5600
+Epoch 5600, loss: 8.50239782187952, error: 0.006501314584098361
+i= 5700
+Epoch 5700, loss: 8.531105116630348, error: 0.005961828577419615
+i= 5800
+Epoch 5800, loss: 8.557726146427116, error: 0.00606484802465145
+i= 5900
+Epoch 5900, loss: 8.536565862237374, error: 0.006542992199841743
+i= 6000
+Epoch 6000, loss: 8.542802710424354, error: 0.00647047206650573
+i= 6100
+Epoch 6100, loss: 8.53491623446581, error: 0.006406139872978088
+i= 6200
+Epoch 6200, loss: 8.584337403199504, error: 0.0065920419474413015
+i= 6300
+Epoch 6300, loss: 8.542430291774554, error: 0.006799055062738912
+i= 6400
+Epoch 6400, loss: 8.536521045753906, error: 0.008508519334349107
+i= 6500
+Epoch 6500, loss: 8.523001965000521, error: 0.007711658280736042
+i= 6600
+Epoch 6600, loss: 8.569942659271634, error: 0.00881190951713214
+i= 6700
+Epoch 6700, loss: 8.566567560336102, error: 0.007573454157494275
+i= 6800
+Epoch 6800, loss: 8.498253456641557, error: 0.007371296625023134
+i= 6900
+Epoch 6900, loss: 8.525623026106937, error: 0.007071744236600018
+i= 7000
+Epoch 7000, loss: 8.567626298222027, error: 0.007145125688948335
+i= 7100
+Epoch 7100, loss: 8.550554364952516, error: 0.007568680896305821
+i= 7200
+Epoch 7200, loss: 8.54780235872176, error: 0.00801237717653647
+i= 7300
+Epoch 7300, loss: 8.532953467498194, error: 0.007085652435603726
+i= 7400
+Epoch 7400, loss: 8.52327557368394, error: 0.006541720907197993
+i= 7500
+Epoch 7500, loss: 8.580474140485096, error: 0.0065644592391319485
+i= 7600
+Epoch 7600, loss: 8.514250533652147, error: 0.007039088763297729
+i= 7700
+Epoch 7700, loss: 8.54929613520134, error: 0.0061393641671613096
+i= 7800
+Epoch 7800, loss: 8.553951235659405, error: 0.0066044902472696615
+i= 7900
+Epoch 7900, loss: 8.52832461758908, error: 0.006356966382839654
+i= 8000
+Epoch 8000, loss: 8.539455223584632, error: 0.007111053564028268
+i= 8100
+Epoch 8100, loss: 8.566018540029024, error: 0.007334560122425486
+i= 8200
+Epoch 8200, loss: 8.568938311761062, error: 0.008487583153685975
+i= 8300
+Epoch 8300, loss: 8.562632490533312, error: 0.008829904681440997
+i= 8400
+Epoch 8400, loss: 8.515007053918366, error: 0.008576317802953084
+i= 8500
+Epoch 8500, loss: 8.51144270917704, error: 0.007085264624232457
+i= 8600
+Epoch 8600, loss: 8.516782569336952, error: 0.006851258134036045
+i= 8700
+Epoch 8700, loss: 8.50173990173028, error: 0.0070200617088369
+i= 8800
+Epoch 8800, loss: 8.546804094028634, error: 0.006820541113015115
+i= 8900
+Epoch 8900, loss: 8.535688180079829, error: 0.006179001190844456
+i= 9000
+Epoch 9000, loss: 8.509289478078825, error: 0.006574301975193145
+i= 9100
+Epoch 9100, loss: 8.539508039758111, error: 0.00797208394966155
+i= 9200
+Epoch 9200, loss: 8.51821342343343, error: 0.006994871478920158
+i= 9300
+Epoch 9300, loss: 8.55616635744131, error: 0.007025069670396174
+i= 9400
+Epoch 9400, loss: 8.562286136482378, error: 0.005966548602940497
+i= 9500
+Epoch 9500, loss: 8.587415828965797, error: 0.00603858639264209
+i= 9600
+Epoch 9600, loss: 8.533805167352488, error: 0.005289042603485706
+i= 9700
+Epoch 9700, loss: 8.519036144834264, error: 0.004984705762260306
+i= 9800
+Epoch 9800, loss: 8.548141501734568, error: 0.007166325742448508
+i= 9900
+Epoch 9900, loss: 8.536944025562903, error: 0.004772673631213714
+i= 10000
+Epoch 10000, loss: 8.519559789899015, error: 0.005188009369784553
+8.519525735414623 0.005181081192584651 1
+8.51276421205403 0.04138278020094171 1000
+8.508968550669758 0.06734615496767782 2000
+8.506213509842741 0.07403570047161027 3000
+8.504316667590995 0.08009772551491337 4000
+8.503291516156855 0.08254359519945709 5000
+8.502609113042675 0.08574467661856752 6000
+8.502055963831207 0.08792108466118954 7000
+8.501324222604898 0.09227138475742343 8000
+8.500545413188142 0.09589691725514896 9000
+8.499954049623659 0.10005769019925732 10000
+2025-09-09 15:25:45.051862: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-09-09 15:25:45.092443: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-09-09 15:25:45.958240: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1757402746.689102 2360773 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 46559 MB memory:  -> device: 0, name: NVIDIA L40, pci bus id: 0000:b4:00.0, compute capability: 8.9
+/home/ET/thhu/nn/lib/python3.12/site-packages/keras/src/optimizers/base_optimizer.py:857: UserWarning: Gradients do not exist for variables ['dense_2/bias'] when minimizing the loss. If using `model.compile()`, did you forget to provide a `loss` argument?
+  warnings.warn(
+i= 100
+Epoch 100, loss: 8.54202422189142, error: 0.08222535632598417
+i= 200
+Epoch 200, loss: 8.545992367815492, error: 0.009013032011285216
+i= 300
+Epoch 300, loss: 8.528044657761711, error: 0.012794292913838934
+i= 400
+Epoch 400, loss: 8.53073306838927, error: 0.012305558960519205
+i= 500
+Epoch 500, loss: 8.525810436498809, error: 0.008795066936127803
+i= 600
+Epoch 600, loss: 8.544944995190937, error: 0.0064920721177447625
+i= 700
+Epoch 700, loss: 8.535628795724614, error: 0.0037085714320683914
+i= 800
+Epoch 800, loss: 8.542831718157837, error: 0.0029809286608052125
+i= 900
+Epoch 900, loss: 8.547499182674166, error: 0.004124521064884217
+i= 1000
+Epoch 1000, loss: 8.55217455872298, error: 0.0021559258603313595
+i= 1100
+Epoch 1100, loss: 8.521660878523116, error: 0.005430575719497829
+i= 1200
+Epoch 1200, loss: 8.517009181854283, error: 0.002985240972662862
+i= 1300
+Epoch 1300, loss: 8.553229319436605, error: 0.006697080086368196
+i= 1400
+Epoch 1400, loss: 8.523646049374628, error: 0.007370284859903393
+i= 1500
+Epoch 1500, loss: 8.515087274250234, error: 0.009615720275766328
+i= 1600
+Epoch 1600, loss: 8.52047337897374, error: 0.00465488061459721
+i= 1700
+Epoch 1700, loss: 8.515715847219319, error: 0.006878775407440724
+i= 1800
+Epoch 1800, loss: 8.515119937101357, error: 0.0027142717693893585
+i= 1900
+Epoch 1900, loss: 8.513570684160651, error: 0.0044774740469815414
+i= 2000
+Epoch 2000, loss: 8.50591313101626, error: 0.0031909527714790733
+i= 2100
+Epoch 2100, loss: 8.528858692165722, error: 0.0030424249255528502
+i= 2200
+Epoch 2200, loss: 8.518242553028134, error: 0.006561960779745515
+i= 2300
+Epoch 2300, loss: 8.52972530508821, error: 0.01019609307753055
+i= 2400
+Epoch 2400, loss: 8.517463566509129, error: 0.005984758653139849
+i= 2500
+Epoch 2500, loss: 8.498045783954149, error: 0.005408961223494425
+i= 2600
+Epoch 2600, loss: 8.559013696521584, error: 0.005766369225153276
+i= 2700
+Epoch 2700, loss: 8.530393229785453, error: 0.0031340663793372366
+i= 2800
+Epoch 2800, loss: 8.515932711351601, error: 0.0035780957098184457
+i= 2900
+Epoch 2900, loss: 8.524601842873116, error: 0.0009788520597943256
+i= 3000
+Epoch 3000, loss: 8.552011558231488, error: 0.002476195479535433
+i= 3100
+Epoch 3100, loss: 8.552521815025825, error: 0.003647163169355313
+i= 3200
+Epoch 3200, loss: 8.484764056386133, error: 0.009897356873540436
+i= 3300
+Epoch 3300, loss: 8.53103964043943, error: 0.004897781523226761
+i= 3400
+Epoch 3400, loss: 8.482117266196603, error: 0.0014581167024482723
+i= 3500
+Epoch 3500, loss: 8.539828610129721, error: 0.0012162028689047663
+i= 3600
+Epoch 3600, loss: 8.516640627906458, error: 0.002754968225548095
+i= 3700
+Epoch 3700, loss: 8.51175469430207, error: 0.0020114486955271874
+i= 3800
+Epoch 3800, loss: 8.506746060020744, error: 0.001756309418410676
+i= 3900
+Epoch 3900, loss: 8.539824929977044, error: 0.0031457753678492254
+i= 4000
+Epoch 4000, loss: 8.537935831580272, error: 0.004495599899443228
+i= 4100
+Epoch 4100, loss: 8.505197285801833, error: 0.0030215747271831184
+i= 4200
+Epoch 4200, loss: 8.541941410236436, error: 0.007224076487268729
+i= 4300
+Epoch 4300, loss: 8.515227000501882, error: 0.002739040079051885
+i= 4400
+Epoch 4400, loss: 8.503294204876477, error: 0.0028747664133197946
+i= 4500
+Epoch 4500, loss: 8.538850291800774, error: 0.0014154102383248362
+i= 4600
+Epoch 4600, loss: 8.53639010355994, error: 0.0012434184076093565
+i= 4700
+Epoch 4700, loss: 8.526139522823629, error: 0.0018575995280091264
+i= 4800
+Epoch 4800, loss: 8.523208631135955, error: 0.0006513999706752685
+i= 4900
+Epoch 4900, loss: 8.543717484305487, error: 0.002707679076104253
+i= 5000
+Epoch 5000, loss: 8.53220282264714, error: 0.0025846674222387168
+i= 5100
+Epoch 5100, loss: 8.509256056381865, error: 0.002291575760686889
+i= 5200
+Epoch 5200, loss: 8.55632685400003, error: 0.0007808638774200144
+i= 5300
+Epoch 5300, loss: 8.50920483685389, error: 0.0019007179083003717
+i= 5400
+Epoch 5400, loss: 8.520875403239348, error: 0.0007993822384022104
+i= 5500
+Epoch 5500, loss: 8.55606528533393, error: 0.0010687946913396837
+i= 5600
+Epoch 5600, loss: 8.498187551645056, error: 0.002466142454855692
+i= 5700
+Epoch 5700, loss: 8.527709212094173, error: 0.0027992542123711148
+i= 5800
+Epoch 5800, loss: 8.550364120222573, error: 0.002435588057430965
+i= 5900
+Epoch 5900, loss: 8.528389489616405, error: 0.00218884929868751
+i= 6000
+Epoch 6000, loss: 8.53136887426949, error: 0.001271448835457473
+i= 6100
+Epoch 6100, loss: 8.525038886324378, error: 0.0027808829735494066
+i= 6200
+Epoch 6200, loss: 8.526042578566363, error: 0.002540748141851524
+i= 6300
+Epoch 6300, loss: 8.506896682219883, error: 0.002080788249231495
+i= 6400
+Epoch 6400, loss: 8.517537661047452, error: 0.0008283765636011675
+i= 6500
+Epoch 6500, loss: 8.495514269488035, error: 0.0011241126009660634
+i= 6600
+Epoch 6600, loss: 8.529969757696783, error: 0.0014646201625042586
+i= 6700
+Epoch 6700, loss: 8.56076547601838, error: 0.003329167057448696
+i= 6800
+Epoch 6800, loss: 8.485611007468572, error: 0.002267635521568726
+i= 6900
+Epoch 6900, loss: 8.522510178937075, error: 0.0020987261473696533
+i= 7000
+Epoch 7000, loss: 8.54722903241782, error: 0.0015381749205076402
+i= 7100
+Epoch 7100, loss: 8.54508998883937, error: 0.00204514388593979
+i= 7200
+Epoch 7200, loss: 8.541946086840944, error: 0.003695274896065247
+i= 7300
+Epoch 7300, loss: 8.529488659959878, error: 0.0017929761548804654
+i= 7400
+Epoch 7400, loss: 8.52036281929506, error: 0.0008172833101259182
+i= 7500
+Epoch 7500, loss: 8.548570181551389, error: 0.001162537542016138
+i= 7600
+Epoch 7600, loss: 8.509110420508106, error: 0.001093709299932153
+i= 7700
+Epoch 7700, loss: 8.531125448066922, error: 0.0008535814085069745
+i= 7800
+Epoch 7800, loss: 8.548533797306986, error: 0.0011192799340997578
+i= 7900
+Epoch 7900, loss: 8.512526418713826, error: 0.0007177871268212464
+i= 8000
+Epoch 8000, loss: 8.523506143719237, error: 0.0009504725766565187
+i= 8100
+Epoch 8100, loss: 8.523438209898087, error: 0.001134252451802782
+i= 8200
+Epoch 8200, loss: 8.533384145956022, error: 0.0018161850966598248
+i= 8300
+Epoch 8300, loss: 8.544405526806825, error: 0.0014783799818898354
+i= 8400
+Epoch 8400, loss: 8.500744997194799, error: 0.0012375038675973245
+i= 8500
+Epoch 8500, loss: 8.50860383496948, error: 0.0006305178196701879
+i= 8600
+Epoch 8600, loss: 8.50658001174558, error: 0.0008603677125934707
+i= 8700
+Epoch 8700, loss: 8.49537144900946, error: 0.0005285832382739454
+i= 8800
+Epoch 8800, loss: 8.541232068352901, error: 0.0020539083766872575
+i= 8900
+Epoch 8900, loss: 8.532942732371268, error: 0.0007365999128131685
+i= 9000
+Epoch 9000, loss: 8.506867216854396, error: 0.002116987804890343
+i= 9100
+Epoch 9100, loss: 8.537883588990926, error: 0.0013149027261172438
+i= 9200
+Epoch 9200, loss: 8.51598758543457, error: 0.0021451709733661317
+i= 9300
+Epoch 9300, loss: 8.554087107176402, error: 0.0020501547553509023
+i= 9400
+Epoch 9400, loss: 8.560270883727933, error: 0.002045215125797222
+i= 9500
+Epoch 9500, loss: 8.58569324226633, error: 0.0007573317335955288
+i= 9600
+Epoch 9600, loss: 8.530819310979776, error: 0.0009560526642249466
+i= 9700
+Epoch 9700, loss: 8.516466184733295, error: 0.0006099973248458791
+i= 9800
+Epoch 9800, loss: 8.545699333881867, error: 0.0003846260456887081
+i= 9900
+Epoch 9900, loss: 8.534416623568516, error: 0.0010009906376385344
+i= 10000
+Epoch 10000, loss: 8.517703984938397, error: 0.0013035828099164704
+2025-10-08 09:46:40.008261: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-08 09:46:40.048027: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-10-08 09:46:40.879452: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1759888001.602645 3619550 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 43505 MB memory:  -> device: 0, name: NVIDIA L40, pci bus id: 0000:8a:00.0, compute capability: 8.9
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+/home/ET/thhu/plaplace/Example1/plaplace1.py:437: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+i= 100
+Epoch 100, loss: 8.533825762107245
+i= 200
+Epoch 200, loss: 8.2339621315766
+i= 300
+Epoch 300, loss: 8.233247115232778
+i= 400
+Epoch 400, loss: 8.194339819947059
+i= 500
+Epoch 500, loss: 8.194974209695609
+i= 600
+Epoch 600, loss: 8.212579510488231
+i= 700
+Epoch 700, loss: 8.177371464951673
+i= 800
+Epoch 800, loss: 8.200577911959034
+i= 900
+Epoch 900, loss: 8.159701513932776
+i= 1000
+Epoch 1000, loss: 8.117987014383706
+8.11416896078059 1
+0.00017200096211750072 1000
+8.731624319408568e-05 2000
+4.5332852520438845e-05 3000
+3.894808095815721e-05 4000
+6.342565754638512e-05 5000
+6.0461220254941255e-05 6000
+3.939849538074018e-05 7000
+3.257037162270117e-05 8000
+2.682047883130946e-05 9000
+2.730770427999859e-05 10000
+2025-10-08 10:02:30.868930: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-08 10:02:30.908788: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-10-08 10:02:31.733687: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1759888952.467232 3630926 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 43505 MB memory:  -> device: 0, name: NVIDIA L40, pci bus id: 0000:8a:00.0, compute capability: 8.9
+/home/ET/thhu/nn/lib/python3.12/site-packages/keras/src/optimizers/base_optimizer.py:857: UserWarning: Gradients do not exist for variables ['dense_2/bias'] when minimizing the loss. If using `model.compile()`, did you forget to provide a `loss` argument?
+  warnings.warn(
+i= 100
+Epoch 100, loss: 8.542012558119788, error: 0.08698911148667506
+i= 200
+Epoch 200, loss: 8.545980826786185, error: 0.009250682337373388
+i= 300
+Epoch 300, loss: 8.528032861968127, error: 0.013408437142780666
+i= 400
+Epoch 400, loss: 8.530721460566845, error: 0.012917315096810955
+i= 500
+Epoch 500, loss: 8.525798849634299, error: 0.009158093799855912
+i= 600
+Epoch 600, loss: 8.544933258088045, error: 0.006593582893662798
+i= 700
+Epoch 700, loss: 8.535616851560166, error: 0.00377202208576035
+i= 800
+Epoch 800, loss: 8.542819939011437, error: 0.003045219873299868
+i= 900
+Epoch 900, loss: 8.547487428708134, error: 0.004203696481949084
+i= 1000
+Epoch 1000, loss: 8.552162924957972, error: 0.0020981335531869314
+i= 1100
+Epoch 1100, loss: 8.521649216179277, error: 0.005378126686079252
+i= 1200
+Epoch 1200, loss: 8.51699748565669, error: 0.0030193886195105093
+i= 1300
+Epoch 1300, loss: 8.553217794075273, error: 0.006931314634852839
+i= 1400
+Epoch 1400, loss: 8.523634446186483, error: 0.007739395985239631
+i= 1500
+Epoch 1500, loss: 8.515075459374636, error: 0.010123959250588163
+i= 1600
+Epoch 1600, loss: 8.520462207407338, error: 0.004728295360076034
+i= 1700
+Epoch 1700, loss: 8.515704363427677, error: 0.007266852773854805
+i= 1800
+Epoch 1800, loss: 8.515108535714168, error: 0.002794629757259064
+i= 1900
+Epoch 1900, loss: 8.513558950411207, error: 0.004600430623467906
+i= 2000
+Epoch 2000, loss: 8.505901589672357, error: 0.003226907149053955
+i= 2100
+Epoch 2100, loss: 8.528847028026922, error: 0.0031464695517110742
+i= 2200
+Epoch 2200, loss: 8.518231088497009, error: 0.00691394715181713
+i= 2300
+Epoch 2300, loss: 8.529713343902731, error: 0.010752844273394483
+i= 2400
+Epoch 2400, loss: 8.517452078165464, error: 0.006321130699431171
+i= 2500
+Epoch 2500, loss: 8.498034171107376, error: 0.005585225343902353
+i= 2600
+Epoch 2600, loss: 8.559001949703834, error: 0.006080378466210193
+i= 2700
+Epoch 2700, loss: 8.53038136385262, error: 0.003189447453325062
+i= 2800
+Epoch 2800, loss: 8.515921248301805, error: 0.003693935605343335
+i= 2900
+Epoch 2900, loss: 8.524590224090096, error: 0.0009129279048922032
+i= 3000
+Epoch 3000, loss: 8.552000064298412, error: 0.002460575286786223
+i= 3100
+Epoch 3100, loss: 8.552510082922042, error: 0.0037757615094164694
+i= 3200
+Epoch 3200, loss: 8.484752685730966, error: 0.010339539918406191
+i= 3300
+Epoch 3300, loss: 8.531028286462446, error: 0.0051743928536412635
+i= 3400
+Epoch 3400, loss: 8.482105393016159, error: 0.001532234644400323
+i= 3500
+Epoch 3500, loss: 8.539816836425128, error: 0.0012816827420902986
+i= 3600
+Epoch 3600, loss: 8.51662901149365, error: 0.0028720058744735495
+i= 3700
+Epoch 3700, loss: 8.511742841549149, error: 0.0020225519893107844
+i= 3800
+Epoch 3800, loss: 8.506734216704654, error: 0.0018295547908750323
+i= 3900
+Epoch 3900, loss: 8.53981301517398, error: 0.0032486182963560235
+i= 4000
+Epoch 4000, loss: 8.53792418083694, error: 0.004685621313264442
+i= 4100
+Epoch 4100, loss: 8.505185464387662, error: 0.0031825365360865976
+i= 4200
+Epoch 4200, loss: 8.541929393493774, error: 0.007555863199046722
+i= 4300
+Epoch 4300, loss: 8.51521545017883, error: 0.0028080222412236577
+i= 4400
+Epoch 4400, loss: 8.503282372934427, error: 0.0029466256516628444
+i= 4500
+Epoch 4500, loss: 8.538838549558127, error: 0.0014290514276699788
+i= 4600
+Epoch 4600, loss: 8.536378376117556, error: 0.0012787918766707315
+i= 4700
+Epoch 4700, loss: 8.526127872997463, error: 0.0018907953160791165
+i= 4800
+Epoch 4800, loss: 8.523196962827692, error: 0.0006590166680721622
+i= 4900
+Epoch 4900, loss: 8.543705931360844, error: 0.002829999811820055
+i= 5000
+Epoch 5000, loss: 8.53219108681215, error: 0.002718821733216349
+i= 5100
+Epoch 5100, loss: 8.50924412718137, error: 0.0024032439590441256
+i= 5200
+Epoch 5200, loss: 8.556314685476273, error: 0.0007131023779757378
+i= 5300
+Epoch 5300, loss: 8.50919321994168, error: 0.0019358809701323153
+i= 5400
+Epoch 5400, loss: 8.520863967059547, error: 0.000830673559516172
+i= 5500
+Epoch 5500, loss: 8.556053320294861, error: 0.0010812152851908958
+i= 5600
+Epoch 5600, loss: 8.498176009354466, error: 0.0026085810034489703
+i= 5700
+Epoch 5700, loss: 8.527697458324385, error: 0.0029467865634148736
+i= 5800
+Epoch 5800, loss: 8.550352551096118, error: 0.0025054892107697567
+i= 5900
+Epoch 5900, loss: 8.528377649539898, error: 0.0022966364025989667
+i= 6000
+Epoch 6000, loss: 8.531357460738262, error: 0.0012430687578249288
+i= 6100
+Epoch 6100, loss: 8.525027014865746, error: 0.002927260101167117
+i= 6200
+Epoch 6200, loss: 8.526030736152421, error: 0.0026731488873715016
+i= 6300
+Epoch 6300, loss: 8.506885267739086, error: 0.0021264874332550393
+i= 6400
+Epoch 6400, loss: 8.517526030775379, error: 0.0008458567186945369
+i= 6500
+Epoch 6500, loss: 8.495502796216451, error: 0.0011803708883497094
+i= 6600
+Epoch 6600, loss: 8.529958269289711, error: 0.001524917112077639
+i= 6700
+Epoch 6700, loss: 8.560753691142763, error: 0.003527234263665151
+i= 6800
+Epoch 6800, loss: 8.485599288136713, error: 0.002313265145561578
+i= 6900
+Epoch 6900, loss: 8.522498720902366, error: 0.00221934448009704
+i= 7000
+Epoch 7000, loss: 8.547217106579925, error: 0.0014465827246298122
+i= 7100
+Epoch 7100, loss: 8.54507813064023, error: 0.0019671553566236915
+i= 7200
+Epoch 7200, loss: 8.54193459618117, error: 0.003907166931813006
+i= 7300
+Epoch 7300, loss: 8.529477061172054, error: 0.001860630986080472
+i= 7400
+Epoch 7400, loss: 8.520351095434108, error: 0.0007623526274931537
+i= 7500
+Epoch 7500, loss: 8.548558601608484, error: 0.001091050941894143
+i= 7600
+Epoch 7600, loss: 8.509098642866483, error: 0.0011096538574339016
+i= 7700
+Epoch 7700, loss: 8.531113800962752, error: 0.0008208121697747827
+i= 7800
+Epoch 7800, loss: 8.548522034510883, error: 0.0011430979681346582
+i= 7900
+Epoch 7900, loss: 8.512514660089456, error: 0.0007158930341536443
+i= 8000
+Epoch 8000, loss: 8.523494650837621, error: 0.0009410583560883124
+i= 8100
+Epoch 8100, loss: 8.523426599839455, error: 0.0011933545252940704
+i= 8200
+Epoch 8200, loss: 8.533372354777224, error: 0.001924183117992056
+i= 8300
+Epoch 8300, loss: 8.544394059570253, error: 0.001479619033962393
+i= 8400
+Epoch 8400, loss: 8.500733299423997, error: 0.0012323041470248643
+i= 8500
+Epoch 8500, loss: 8.508592221274135, error: 0.0006467167426938802
+i= 8600
+Epoch 8600, loss: 8.506568519904608, error: 0.0008428947576182723
+i= 8700
+Epoch 8700, loss: 8.49535987074439, error: 0.0005390752276753011
+i= 8800
+Epoch 8800, loss: 8.541220405942612, error: 0.0021702846211190635
+i= 8900
+Epoch 8900, loss: 8.532931198658959, error: 0.0007682302620230219
+i= 9000
+Epoch 9000, loss: 8.506855335813986, error: 0.0021677864619861036
+i= 9100
+Epoch 9100, loss: 8.53787219647138, error: 0.0013401789904330108
+i= 9200
+Epoch 9200, loss: 8.515976187403254, error: 0.002259064252859695
+i= 9300
+Epoch 9300, loss: 8.554075404445207, error: 0.0021385345863198218
+i= 9400
+Epoch 9400, loss: 8.560259021866983, error: 0.00211319016807804
+i= 9500
+Epoch 9500, loss: 8.585681399211158, error: 0.0008012568656367848
+i= 9600
+Epoch 9600, loss: 8.53080753054616, error: 0.0010123117250261497
+i= 9700
+Epoch 9700, loss: 8.516454405917822, error: 0.0006380166714512019
+i= 9800
+Epoch 9800, loss: 8.545687506174774, error: 0.0003685024334459494
+i= 9900
+Epoch 9900, loss: 8.534404894027901, error: 0.0010450801313471895
+i= 10000
+Epoch 10000, loss: 8.517692287152332, error: 0.0013657423536043432
+2026-01-25 15:45:44.673254: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-25 15:45:44.716980: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-01-25 15:45:45.586663: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1769327146.470043 2324229 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 869 MB memory:  -> device: 0, name: NVIDIA L40, pci bus id: 0000:b4:00.0, compute capability: 8.9
+/home/ET/thhu/nn/lib/python3.12/site-packages/keras/src/optimizers/base_optimizer.py:857: UserWarning: Gradients do not exist for variables ['dense_3/bias'] when minimizing the loss. If using `model.compile()`, did you forget to provide a `loss` argument?
+  warnings.warn(
+i= 100
+Epoch 100, loss: 20.223388005823292, error: 6.9249340609811885
+i= 200
+Epoch 200, loss: 18.602092519139138, error: 8.374384621286136
+i= 300
+Epoch 300, loss: 17.436235127203165, error: 8.816447523980505
+i= 400
+Epoch 400, loss: 16.862259606424743, error: 8.710409222962777
+i= 500
+Epoch 500, loss: 16.648968327443825, error: 8.673158846763512
+i= 600
+Epoch 600, loss: 16.63007377571864, error: 8.782248004946688
+i= 700
+Epoch 700, loss: 16.62682513222683, error: 8.761116897330378
+i= 800
+Epoch 800, loss: 16.47074319514804, error: 8.572605995017389
+i= 900
+Epoch 900, loss: 16.431340933624746, error: 8.565052780051033
+i= 1000
+Epoch 1000, loss: 16.602830974775355, error: 8.556860402637145
+i= 1100
+Epoch 1100, loss: 16.52987572879479, error: 8.437615978448276
+i= 1200
+Epoch 1200, loss: 16.547828951771905, error: 8.588819417050527
+i= 1300
+Epoch 1300, loss: 16.839245463395084, error: 8.467557078764687
+i= 1400
+Epoch 1400, loss: 16.556995156676983, error: 8.526022683640063
+i= 1500
+Epoch 1500, loss: 16.47390914651751, error: 8.523485117451218
+i= 1600
+Epoch 1600, loss: 16.50098507134708, error: 8.557417576770884
+i= 1700
+Epoch 1700, loss: 16.610641063499486, error: 8.399230430806469
+i= 1800
+Epoch 1800, loss: 16.383812531214005, error: 8.46740848403741
+i= 1900
+Epoch 1900, loss: 16.43879581145069, error: 8.409642228954285
+i= 2000
+Epoch 2000, loss: 16.681089568293217, error: 8.344718123965608
+i= 2100
+Epoch 2100, loss: 16.51358242553149, error: 8.41514989597406
+i= 2200
+Epoch 2200, loss: 16.52855487068346, error: 8.544027648220093
+i= 2300
+Epoch 2300, loss: 16.576337108501843, error: 8.440795521390692
+i= 2400
+Epoch 2400, loss: 16.31310486536707, error: 8.420046712436545
+i= 2500
+Epoch 2500, loss: 16.34933823956208, error: 8.396118454536344
+i= 2600
+Epoch 2600, loss: 16.554236423670076, error: 8.39126574606142
+i= 2700
+Epoch 2700, loss: 16.548940485764923, error: 8.386986941252168
+i= 2800
+Epoch 2800, loss: 16.69196340440894, error: 8.433996952011439
+i= 2900
+Epoch 2900, loss: 16.54674664704857, error: 8.453809444807739
+i= 3000
+Epoch 3000, loss: 16.480430187651532, error: 8.410368574790498
+i= 3100
+Epoch 3100, loss: 16.49087912945052, error: 8.41467045147128
+i= 3200
+Epoch 3200, loss: 16.621761109132766, error: 8.325197029095717
+i= 3300
+Epoch 3300, loss: 16.540151604772696, error: 8.367564562983022
+i= 3400
+Epoch 3400, loss: 16.465801174513974, error: 8.409092826425828
+i= 3500
+Epoch 3500, loss: 16.618227563436783, error: 8.445341066537047
+i= 3600
+Epoch 3600, loss: 16.483040183987743, error: 8.421555400789726
+i= 3700
+Epoch 3700, loss: 16.56958973154955, error: 8.382111809439353
+i= 3800
+Epoch 3800, loss: 16.527942076533492, error: 8.3562534413901
+i= 3900
+Epoch 3900, loss: 16.428540334066092, error: 8.463322010796002
+i= 4000
+Epoch 4000, loss: 16.462902760938547, error: 8.41184319737806
+i= 4100
+Epoch 4100, loss: 16.35581408164333, error: 8.380691197911766
+i= 4200
+Epoch 4200, loss: 16.626547193282143, error: 8.308091773144444
+i= 4300
+Epoch 4300, loss: 16.3392346461981, error: 8.3059316252799
+i= 4400
+Epoch 4400, loss: 16.719938286558374, error: 8.337511618530794
+i= 4500
+Epoch 4500, loss: 16.383578228283135, error: 8.428486940237308
+i= 4600
+Epoch 4600, loss: 16.401678646105022, error: 8.301617309343074
+i= 4700
+Epoch 4700, loss: 16.62306431811252, error: 8.538002066011991
+i= 4800
+Epoch 4800, loss: 16.62443722553749, error: 8.356930093762415
+i= 4900
+Epoch 4900, loss: 16.60596303645576, error: 8.415691304066936
+i= 5000
+Epoch 5000, loss: 16.51251619942901, error: 8.372331987810515
+i= 5100
+Epoch 5100, loss: 16.417322184243805, error: 8.45065756456558
+i= 5200
+Epoch 5200, loss: 16.37560737372953, error: 8.3148222761292
+i= 5300
+Epoch 5300, loss: 16.371465919275053, error: 8.485392473824488
+i= 5400
+Epoch 5400, loss: 16.65698394756256, error: 8.360674974708044
+i= 5500
+Epoch 5500, loss: 16.543841562532652, error: 8.39894451921802
+i= 5600
+Epoch 5600, loss: 16.33960484073161, error: 8.34915574270464
+i= 5700
+Epoch 5700, loss: 16.44273851664091, error: 8.470158443233855
+i= 5800
+Epoch 5800, loss: 16.412632624154963, error: 8.38624170721789
+i= 5900
+Epoch 5900, loss: 16.53430764728588, error: 8.409578430395754
+i= 6000
+Epoch 6000, loss: 16.453239390026557, error: 8.244716164495301
+i= 6100
+Epoch 6100, loss: 16.558759336713983, error: 8.41855868652286
+i= 6200
+Epoch 6200, loss: 16.534835741999974, error: 8.366634926575589
+i= 6300
+Epoch 6300, loss: 16.597013194483182, error: 8.378942108904205
+i= 6400
+Epoch 6400, loss: 16.355902983122853, error: 8.411020457142408
+i= 6500
+Epoch 6500, loss: 16.365787731053068, error: 8.31425362977176
+i= 6600
+Epoch 6600, loss: 16.392323272772902, error: 8.306622201430262
+i= 6700
+Epoch 6700, loss: 16.561384832873582, error: 8.34509224738865
+i= 6800
+Epoch 6800, loss: 16.4855075321356, error: 8.382556479827775
+i= 6900
+Epoch 6900, loss: 16.427273533811608, error: 8.35400198644203
+i= 7000
+Epoch 7000, loss: 16.307518933417, error: 8.400870250682612
+i= 7100
+Epoch 7100, loss: 16.392175978984895, error: 8.344825395214396
+i= 7200
+Epoch 7200, loss: 16.483211340744578, error: 8.313547365257437
+i= 7300
+Epoch 7300, loss: 16.344494363531137, error: 8.32990001850079
+i= 7400
+Epoch 7400, loss: 16.552418517457067, error: 8.321286343415993
+i= 7500
+Epoch 7500, loss: 16.473434747906232, error: 8.357857282779705
+i= 7600
+Epoch 7600, loss: 16.956732219812732, error: 8.427941690760676
+i= 7700
+Epoch 7700, loss: 16.54651825288792, error: 8.30505605137941
+i= 7800
+Epoch 7800, loss: 16.3722775649238, error: 8.383879507289555
+i= 7900
+Epoch 7900, loss: 16.31091860259707, error: 8.34414175019953
+i= 8000
+Epoch 8000, loss: 16.695513965952035, error: 8.401044910161556
+i= 8100
+Epoch 8100, loss: 16.39444786835133, error: 8.355179079984108
+i= 8200
+Epoch 8200, loss: 16.46167743002724, error: 8.279079668090011
+i= 8300
+Epoch 8300, loss: 16.410018578343507, error: 8.341595347469779
+i= 8400
+Epoch 8400, loss: 16.35096520503093, error: 8.42426137468158
+i= 8500
+Epoch 8500, loss: 16.548176821803644, error: 8.305639940364077
+i= 8600
+Epoch 8600, loss: 16.40736840724895, error: 8.466981283859534
+i= 8700
+Epoch 8700, loss: 16.49630133377301, error: 8.352000145833822
+i= 8800
+Epoch 8800, loss: 16.350147228487593, error: 8.3737575625602
+i= 8900
+Epoch 8900, loss: 16.41643771025921, error: 8.434020397895885
+i= 9000
+Epoch 9000, loss: 16.71611839790451, error: 8.351776845026711
+i= 9100
+Epoch 9100, loss: 16.69023298042583, error: 8.378998161686066
+i= 9200
+Epoch 9200, loss: 16.375334896300668, error: 8.385803323182351
+i= 9300
+Epoch 9300, loss: 16.39588327991272, error: 8.315983372238854
+i= 9400
+Epoch 9400, loss: 16.425501090008925, error: 8.397786705004243
+i= 9500
+Epoch 9500, loss: 16.531324034083987, error: 8.330888019309631
+i= 9600
+Epoch 9600, loss: 16.49240110565253, error: 8.37896755145365
+i= 9700
+Epoch 9700, loss: 16.5872053206364, error: 8.322220816246718
+i= 9800
+Epoch 9800, loss: 16.348620270640858, error: 8.362482813204783
+i= 9900
+Epoch 9900, loss: 16.677391860182077, error: 8.421021423266003
+i= 10000
+Epoch 10000, loss: 16.565752744466597, error: 8.381236824853746
+2026-01-25 16:16:49.153139: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-25 16:16:49.198671: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-01-25 16:16:50.029518: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1769329010.948320 2354898 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 46557 MB memory:  -> device: 0, name: NVIDIA L40, pci bus id: 0000:b4:00.0, compute capability: 8.9
+/home/ET/thhu/plaplace/Example2.2/plaplace1.py:447: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+i= 100
+Epoch 100, loss: 1.2464963072228956
+i= 200
+Epoch 200, loss: 1.01384806702125
+i= 300
+Epoch 300, loss: 0.9820918156374976
+i= 400
+Epoch 400, loss: 0.9520635915018133
+i= 500
+Epoch 500, loss: 0.9394077702684724
+i= 600
+Epoch 600, loss: 0.8625366055974052
+i= 700
+Epoch 700, loss: 0.7015749910219952
+i= 800
+Epoch 800, loss: 0.5871745528559481
+i= 900
+Epoch 900, loss: 0.4681430587163773
+i= 1000
+Epoch 1000, loss: 0.4515959515252597
+0.4503350151245449 1
+0.12880911873982837 100
+0.06507527452606941 200
+0.034362223268228964 300
+0.023454130218159102 400
+0.018330215324827065 500
+0.023536066424744352 600
+0.019543665468741717 700
+0.01674578073927885 800
+0.01468726404381921 900
+0.013056957440836984 1000
+0.012389954177391357 1100
+0.010968825845780704 1200
+0.009823176678642787 1300
+0.009020762384293108 1400
+0.008364921314369642 1500
+0.010066916578119043 1600
+0.00915015079486052 1700
+0.00861444658727307 1800
+0.008179074280222014 1900
+0.007867929179218509 2000
+0.007730124569143766 2100
+0.007343404626180289 2200
+0.00700279434540273 2300
+0.006741488724935032 2400
+0.006552431218967321 2500
+0.007545906417633377 2600
+0.007227075181402837 2700
+0.006956079417431605 2800
+0.0067012850264271135 2900
+0.006484241134247642 3000
+0.006571236853513278 3100
+0.006344961605764821 3200
+0.006160386845801321 3300
+0.005980932961966683 3400
+0.005820889459586005 3500
+0.006317105374899056 3600
+0.006115452260927596 3700
+0.005935343718486231 3800
+0.0057994206292364125 3900
+0.005681534470099685 4000
+0.005769290719931711 4100
+0.005595928599369127 4200
+0.0054694748691215215 4300
+0.005370045878554788 4400
+0.0052848594295383956 4500
+0.00571706843438948 4600
+0.005584846895692629 4700
+0.005467771914158175 4800
+0.005383071958942307 4900
+0.005305408376218502 5000
+0.005343376938415152 5100
+0.005222466313611834 5200
+0.0051343922553798 5300
+0.005054402042188928 5400
+0.004980153131510888 5500
+0.0053220073792973385 5600
+0.0052134685644782425 5700
+0.005140727895775667 5800
+0.005078089863350162 5900
+0.005012646314377608 6000
+0.005021236155603655 6100
+0.004920330378910227 6200
+0.004850955455080606 6300
+0.004784271404185986 6400
+0.0047201709729345525 6500
+0.0050761983194447325 6600
+0.004983365684035672 6700
+0.004910727564756064 6800
+0.00484603117283323 6900
+0.00478222070738038 7000
+0.004785502243822225 7100
+0.004697058971259567 7200
+0.004623676356600825 7300
+0.0045618634679146725 7400
+0.004502090860610024 7500
+0.004782564989954109 7600
+0.0046863377276540495 7700
+0.00463593371383033 7800
+0.004585610217519137 7900
+0.004534967294475044 8000
+0.0046274796820059295 8100
+0.004547632959377678 8200
+0.0044914274082041164 8300
+0.004435745887834094 8400
+0.004388195806953849 8500
+0.004617838707385823 8600
+0.0045259941829951895 8700
+0.004470292390602017 8800
+0.004419923551026305 8900
+0.004374653239042845 9000
+0.004555237244385578 9100
+0.004467105469656794 9200
+0.004413521312855092 9300
+0.0043596848848819715 9400
+0.004305936252352897 9500
+0.00442078835996341 9600
+0.004349480511147059 9700
+0.004300169116982515 9800
+0.004257210003182921 9900
+0.004221451188335379 10000
+2026-01-25 16:23:55.130556: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-25 16:23:55.173602: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-01-25 16:23:56.037445: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1769329436.923592 2363242 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 869 MB memory:  -> device: 0, name: NVIDIA L40, pci bus id: 0000:b4:00.0, compute capability: 8.9
+/home/ET/thhu/nn/lib/python3.12/site-packages/keras/src/optimizers/base_optimizer.py:857: UserWarning: Gradients do not exist for variables ['dense_3/bias'] when minimizing the loss. If using `model.compile()`, did you forget to provide a `loss` argument?
+  warnings.warn(
+i= 100
+Epoch 100, loss: 1.2771073674843787, error: 1.951766092455646
+i= 200
+Epoch 200, loss: 1.2610288712872728, error: 2.006683857902916
+i= 300
+Epoch 300, loss: 1.2594436242717886, error: 2.011779914253894
+i= 400
+Epoch 400, loss: 1.25336375189343, error: 2.026800911026355
+i= 500
+Epoch 500, loss: 1.2525743045616635, error: 2.021802113933457
+i= 600
+Epoch 600, loss: 1.253109091534467, error: 2.0228071842324864
+i= 700
+Epoch 700, loss: 1.2517668938399664, error: 2.0089117733987387
+i= 800
+Epoch 800, loss: 1.2508546505800027, error: 2.024401812630145
+i= 900
+Epoch 900, loss: 1.2442095320499815, error: 2.015973234716822
+i= 1000
+Epoch 1000, loss: 1.2516605122368052, error: 2.004084990010539
+i= 1100
+Epoch 1100, loss: 1.2499780949761854, error: 2.016203020969799
+i= 1200
+Epoch 1200, loss: 1.2491362641627803, error: 2.0143811178488944
+i= 1300
+Epoch 1300, loss: 1.2641068728768179, error: 2.0238055730425684
+i= 1400
+Epoch 1400, loss: 1.2473709280294203, error: 2.018353846200994
+i= 1500
+Epoch 1500, loss: 1.245048255016032, error: 2.0310679790337547
+i= 1600
+Epoch 1600, loss: 1.2401791211745192, error: 2.0403624040802915
+i= 1700
+Epoch 1700, loss: 1.252525055428175, error: 1.9980346321355102
+i= 1800
+Epoch 1800, loss: 1.2397849161307972, error: 2.02249093034148
+i= 1900
+Epoch 1900, loss: 1.2386317865798686, error: 2.0159251990098173
+i= 2000
+Epoch 2000, loss: 1.2485880551339248, error: 2.0385454442105417
+i= 2100
+Epoch 2100, loss: 1.2382758119611106, error: 2.0396977413624344
+i= 2200
+Epoch 2200, loss: 1.237345276774948, error: 2.0390845589664686
+i= 2300
+Epoch 2300, loss: 1.2416867412611634, error: 2.0459371566337605
+i= 2400
+Epoch 2400, loss: 1.2225214121537753, error: 2.0358179080738372
+i= 2500
+Epoch 2500, loss: 1.2321390152594476, error: 2.044599998294875
+i= 2600
+Epoch 2600, loss: 1.2353348269166526, error: 2.060428744728903
+i= 2700
+Epoch 2700, loss: 1.2355811631574518, error: 2.0745507135978962
+i= 2800
+Epoch 2800, loss: 1.2502945236411056, error: 2.0353023233644367
+i= 2900
+Epoch 2900, loss: 1.2307288462140487, error: 2.0526377146237977
+i= 3000
+Epoch 3000, loss: 1.2267886784953912, error: 2.0578493420850528
+i= 3100
+Epoch 3100, loss: 1.2313096147661569, error: 2.0611182776566555
+i= 3200
+Epoch 3200, loss: 1.2410924640633458, error: 2.091934222017705
+i= 3300
+Epoch 3300, loss: 1.2287046524891245, error: 2.053185306337927
+i= 3400
+Epoch 3400, loss: 1.2285583836838767, error: 2.0938981006172317
+i= 3500
+Epoch 3500, loss: 1.235972453410641, error: 2.085571974151109
+i= 3600
+Epoch 3600, loss: 1.2254175491230581, error: 2.089606043804632
+i= 3700
+Epoch 3700, loss: 1.232111434302257, error: 2.0859988040847135
+i= 3800
+Epoch 3800, loss: 1.229365136189685, error: 2.0614061662360306
+i= 3900
+Epoch 3900, loss: 1.2212315114433594, error: 2.1016558894276693
+i= 4000
+Epoch 4000, loss: 1.2265577591549848, error: 2.087038009490765
+i= 4100
+Epoch 4100, loss: 1.2199494085961942, error: 2.0560541684370284
+i= 4200
+Epoch 4200, loss: 1.2351117383857966, error: 2.1121804047591253
+i= 4300
+Epoch 4300, loss: 1.2195812204474326, error: 2.107629440248667
+i= 4400
+Epoch 4400, loss: 1.2407661017599882, error: 2.1027252114974777
+i= 4500
+Epoch 4500, loss: 1.2193275251069315, error: 2.0871065529117945
+i= 4600
+Epoch 4600, loss: 1.2224104524608832, error: 2.0940693044164607
+i= 4700
+Epoch 4700, loss: 1.2343187611274384, error: 2.10610194898707
+i= 4800
+Epoch 4800, loss: 1.2318308517879542, error: 2.1040080504955867
+i= 4900
+Epoch 4900, loss: 1.232120010423939, error: 2.0893132621098593
+i= 5000
+Epoch 5000, loss: 1.2245652177427235, error: 2.101586992812759
+i= 5100
+Epoch 5100, loss: 1.2192297871731248, error: 2.111284658367249
+i= 5200
+Epoch 5200, loss: 1.216562154150802, error: 2.1098091556617184
+i= 5300
+Epoch 5300, loss: 1.2132059665266304, error: 2.1069954740581767
+i= 5400
+Epoch 5400, loss: 1.232703304359334, error: 2.102322765677478
+i= 5500
+Epoch 5500, loss: 1.2267555047157452, error: 2.095067207679557
+i= 5600
+Epoch 5600, loss: 1.2144982585361017, error: 2.0939413538919687
+i= 5700
+Epoch 5700, loss: 1.2188631693555005, error: 2.0944828581051462
+i= 5800
+Epoch 5800, loss: 1.2196130188763996, error: 2.1007362754029075
+i= 5900
+Epoch 5900, loss: 1.2271834532291575, error: 2.1054143798630665
+i= 6000
+Epoch 6000, loss: 1.2200637668937975, error: 2.119401110831096
+i= 6100
+Epoch 6100, loss: 1.228526498895037, error: 2.0999508431224094
+i= 6200
+Epoch 6200, loss: 1.2268268235040232, error: 2.1024610060430855
+i= 6300
+Epoch 6300, loss: 1.2307167834131534, error: 2.1177376188228334
+i= 6400
+Epoch 6400, loss: 1.2142808519023243, error: 2.105458780279709
+i= 6500
+Epoch 6500, loss: 1.2133808926049199, error: 2.0993515296513032
+i= 6600
+Epoch 6600, loss: 1.2143144345466954, error: 2.1206375306567273
+i= 6700
+Epoch 6700, loss: 1.2297236550688304, error: 2.088397000404639
+i= 6800
+Epoch 6800, loss: 1.2229929128533, error: 2.103740616233064
+i= 6900
+Epoch 6900, loss: 1.2205123106738234, error: 2.089810258303872
+i= 7000
+Epoch 7000, loss: 1.2121462664664013, error: 2.102314728517111
+i= 7100
+Epoch 7100, loss: 1.2156826561637062, error: 2.1122985106976864
+i= 7200
+Epoch 7200, loss: 1.2226469153251953, error: 2.119522870527659
+i= 7300
+Epoch 7300, loss: 1.2111452446722757, error: 2.095019607399405
+i= 7400
+Epoch 7400, loss: 1.228289578019256, error: 2.090298269195789
+i= 7500
+Epoch 7500, loss: 1.220620314867998, error: 2.0922072396984897
+i= 7600
+Epoch 7600, loss: 1.255208198292428, error: 2.093836668942422
+i= 7700
+Epoch 7700, loss: 1.227764055400831, error: 2.0916825246138906
+i= 7800
+Epoch 7800, loss: 1.2148699773726879, error: 2.1075393797252744
+i= 7900
+Epoch 7900, loss: 1.213476420958093, error: 2.122675316187809
+i= 8000
+Epoch 8000, loss: 1.235410750665609, error: 2.117439925036095
+i= 8100
+Epoch 8100, loss: 1.2145392915345306, error: 2.1058899637384463
+i= 8200
+Epoch 8200, loss: 1.2217584688201113, error: 2.079321908111905
+i= 8300
+Epoch 8300, loss: 1.2167167857020358, error: 2.091612410750273
+i= 8400
+Epoch 8400, loss: 1.2106220035222344, error: 2.1026681869426653
+i= 8500
+Epoch 8500, loss: 1.2270841558236874, error: 2.1047166935424113
+i= 8600
+Epoch 8600, loss: 1.217922860545626, error: 2.1266486308380976
+i= 8700
+Epoch 8700, loss: 1.2237078591477937, error: 2.1010068290500494
+i= 8800
+Epoch 8800, loss: 1.2141068220628368, error: 2.09403460790852
+i= 8900
+Epoch 8900, loss: 1.2181778210936467, error: 2.1102657981705737
+i= 9000
+Epoch 9000, loss: 1.235871177720721, error: 2.0950709488611587
+i= 9100
+Epoch 9100, loss: 1.2377784112621457, error: 2.107786404170599
+i= 9200
+Epoch 9200, loss: 1.2154029016301353, error: 2.1040696656708917
+i= 9300
+Epoch 9300, loss: 1.2181652806665484, error: 2.109716923365492
+i= 9400
+Epoch 9400, loss: 1.217903227961086, error: 2.084903991769372
+i= 9500
+Epoch 9500, loss: 1.224661043662169, error: 2.0896068053901207
+i= 9600
+Epoch 9600, loss: 1.2206144058130897, error: 2.101853956279923
+i= 9700
+Epoch 9700, loss: 1.2299485322078978, error: 2.1080782311095803
+i= 9800
+Epoch 9800, loss: 1.2112345745178663, error: 2.1092033406200184
+i= 9900
+Epoch 9900, loss: 1.232145817570333, error: 2.1164788074312906
+i= 10000
+Epoch 10000, loss: 1.2295414388589967, error: 2.0956258834331005
+2026-01-25 16:36:34.062367: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-25 16:36:34.105555: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-01-25 16:36:34.940271: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1769330195.809968 2375822 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 46557 MB memory:  -> device: 0, name: NVIDIA L40, pci bus id: 0000:b4:00.0, compute capability: 8.9
+/home/ET/thhu/plaplace/Example2.2/plaplace1.py:447: OptimizeWarning: Unknown solver options: method_bfgs, initial_scale
+  result = minimize(loss_and_gradient, initial_weights,
+i= 100
+Epoch 100, loss: 1.1993866378238789
+i= 200
+Epoch 200, loss: 1.058508354377304
+i= 300
+Epoch 300, loss: 1.0283076080175608
+i= 400
+Epoch 400, loss: 1.0081712213582033
+i= 500
+Epoch 500, loss: 1.00218868951249
+i= 600
+Epoch 600, loss: 1.0047862929085931
+i= 700
+Epoch 700, loss: 1.0031628099875816
+i= 800
+Epoch 800, loss: 0.9984271262967889
+i= 900
+Epoch 900, loss: 0.9949070692127168
+i= 1000
+Epoch 1000, loss: 0.9931439153631425
+0.9925207264341962 1
+0.36688053799059483 100
+0.18769771590145407 200
+0.11537497788337153 300
+0.06952328209001268 400
+0.04831567958652745 500
+0.05204350286821053 600
+0.04206844820759793 700
+0.03493838924795323 800
+0.0304303453292056 900
+0.027043823095372663 1000
+0.026683257184001385 1100
+0.023419252067328748 1200
+0.02106053892092946 1300
+0.019476010396068156 1400
+0.018467377298901327 1500
+0.02164503176691968 1600
+0.020235811495701084 1700
+0.019134429996110675 1800
+0.018052916754245935 1900
+0.017257168583597157 2000
+0.01768212349615477 2100
+0.01676943678810926 2200
+0.016077838811952228 2300
+0.015495843820952877 2400
+0.015014390905502599 2500
+0.01639559128812633 2600
+0.015765267349084188 2700
+0.015267782280022586 2800
+0.014826699928496664 2900
+0.014423437809463287 3000
+0.014207336671184928 3100
+0.013578415886324854 3200
+0.013090885791074907 3300
+0.012805702781832198 3400
+0.012551617544181659 3500
+0.014055692191834827 3600
+0.013657535608067957 3700
+0.013345416866912837 3800
+0.013091931602134945 3900
+0.012895935699565597 4000
+0.012691559872772065 4100
+0.0123957901151165 4200
+0.01217562624956425 4300
+0.011965852644941332 4400
+0.011823269941538478 4500
+0.012783841985991622 4600
+0.012530244623473998 4700
+0.012337657926287016 4800
+0.012167240373125842 4900
+0.012015340348900323 5000
+0.011761873322286308 5100
+0.011542441368775089 5200
+0.01136417873654094 5300
+0.011239099448660965 5400
+0.011129122551836096 5500
+0.012163443985897264 5600
+0.011998174606256051 5700
+0.011870824010765899 5800
+0.011752458800539522 5900
+0.011624229103028808 6000
+0.011184264434579743 6100
+0.011033952719309912 6200
+0.010939963703079425 6300
+0.010858844623748927 6400
+0.010758963858593294 6500
+0.011656288624320369 6600
+0.011465914959830745 6700
+0.011338700157664111 6800
+0.011218414941631996 6900
+0.011116667612000758 7000
+0.01094876654607043 7100
+0.010742885414279917 7200
+0.010618953483432121 7300
+0.010516576492487075 7400
+0.010415303296963791 7500
+0.011280916088878185 7600
+0.01108429504022361 7700
+0.010978824178691489 7800
+0.01088256330119409 7900
+0.010794286823860614 8000
+0.0108297249082366 8100
+0.010596712413486382 8200
+0.010494045130215558 8300
+0.01039204189507972 8400
+0.01029186903125361 8500
+0.011256887346763693 8600
+0.01100975171826778 8700
+0.010902846167805607 8800
+0.010812565255027988 8900
+0.010727362836185871 9000
+0.010316655193888996 9100
+0.010049530236072815 9200
+0.009920015023741683 9300
+0.00982952592876171 9400
+0.009732476135205151 9500
+0.011055301796748945 9600
+0.010763196422333221 9700
+0.01064499013266391 9800
+0.010551822654283054 9900
+0.010475756243497997 10000
+2026-01-25 16:45:46.035590: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-25 16:45:46.079096: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-01-25 16:45:46.938348: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1769330747.800588 2386174 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 869 MB memory:  -> device: 0, name: NVIDIA L40, pci bus id: 0000:b4:00.0, compute capability: 8.9
+/home/ET/thhu/nn/lib/python3.12/site-packages/keras/src/optimizers/base_optimizer.py:857: UserWarning: Gradients do not exist for variables ['dense_3/bias'] when minimizing the loss. If using `model.compile()`, did you forget to provide a `loss` argument?
+  warnings.warn(
+i= 100
+Epoch 100, loss: 1.6918851200028613, error: 2.0002614555873364
+i= 200
+Epoch 200, loss: 1.680432398992123, error: 2.0489556889518736
+i= 300
+Epoch 300, loss: 1.680089662584826, error: 2.046538160772263
+i= 400
+Epoch 400, loss: 1.6721912734375626, error: 2.0677584415470034
+i= 500
+Epoch 500, loss: 1.6717216401040005, error: 2.0596550311003683
+i= 600
+Epoch 600, loss: 1.671809844705787, error: 2.0590484707709167
+i= 700
+Epoch 700, loss: 1.6695192395970309, error: 2.047929343783789
+i= 800
+Epoch 800, loss: 1.6675693846161939, error: 2.0616647148154112
+i= 900
+Epoch 900, loss: 1.6577878208656227, error: 2.073468677456513
+i= 1000
+Epoch 1000, loss: 1.666728296025483, error: 2.0423020383016715
+i= 1100
+Epoch 1100, loss: 1.6627395788727808, error: 2.0486093138554313
+i= 1200
+Epoch 1200, loss: 1.661423918726168, error: 2.0828854903944145
+i= 1300
+Epoch 1300, loss: 1.680367574649398, error: 2.0591639646014817
+i= 1400
+Epoch 1400, loss: 1.659814266633257, error: 2.0609006644289587
+i= 1500
+Epoch 1500, loss: 1.6554091682013736, error: 2.0663851543095526
+i= 1600
+Epoch 1600, loss: 1.6481051659529178, error: 2.066453751437868
+i= 1700
+Epoch 1700, loss: 1.6614370969710588, error: 2.051477290058087
+i= 1800
+Epoch 1800, loss: 1.6449428190296573, error: 2.0751954672558877
+i= 1900
+Epoch 1900, loss: 1.6408178312791493, error: 2.097300289114853
+i= 2000
+Epoch 2000, loss: 1.6532333562677664, error: 2.084220186985553
+i= 2100
+Epoch 2100, loss: 1.638868018142118, error: 2.0901807944539095
+i= 2200
+Epoch 2200, loss: 1.6371177015794791, error: 2.0930848667543698
+i= 2300
+Epoch 2300, loss: 1.641332255262837, error: 2.106106548203653
+i= 2400
+Epoch 2400, loss: 1.6192128411797897, error: 2.11965876282435
+i= 2500
+Epoch 2500, loss: 1.62703640022119, error: 2.082320790509414
+i= 2600
+Epoch 2600, loss: 1.633572129466365, error: 2.1327214918243396
+i= 2700
+Epoch 2700, loss: 1.6288587957397649, error: 2.1192248010130097
+i= 2800
+Epoch 2800, loss: 1.646089750446476, error: 2.1113968114399655
+i= 2900
+Epoch 2900, loss: 1.6232550538144217, error: 2.1686627230197018
+i= 3000
+Epoch 3000, loss: 1.6159544459483353, error: 2.1506990849851593
+i= 3100
+Epoch 3100, loss: 1.6194646519869307, error: 2.1504682887692295
+i= 3200
+Epoch 3200, loss: 1.6307119092564892, error: 2.1633025074194205
+i= 3300
+Epoch 3300, loss: 1.616859728606221, error: 2.153258094642026
+i= 3400
+Epoch 3400, loss: 1.6133934126464298, error: 2.1739436716642704
+i= 3500
+Epoch 3500, loss: 1.6286478380566223, error: 2.1493077937119023
+i= 3600
+Epoch 3600, loss: 1.6111371631354252, error: 2.1917669056489832
+i= 3700
+Epoch 3700, loss: 1.6175256444585673, error: 2.154859440797327
+i= 3800
+Epoch 3800, loss: 1.6170413184394414, error: 2.193360308997896
+i= 3900
+Epoch 3900, loss: 1.60065459876141, error: 2.173760619119918
+i= 4000
+Epoch 4000, loss: 1.6105268678119948, error: 2.1961417474970086
+i= 4100
+Epoch 4100, loss: 1.5972081332538284, error: 2.191072741289794
+i= 4200
+Epoch 4200, loss: 1.6234898946760048, error: 2.172157701222008
+i= 4300
+Epoch 4300, loss: 1.5978569622075163, error: 2.199777069397852
+i= 4400
+Epoch 4400, loss: 1.6313693023386173, error: 2.1986533721450785
+i= 4500
+Epoch 4500, loss: 1.6009721238251529, error: 2.162177613722188
+i= 4600
+Epoch 4600, loss: 1.6061215222228256, error: 2.1605800344451436
+i= 4700
+Epoch 4700, loss: 1.6217509282019338, error: 2.190011123392562
+i= 4800
+Epoch 4800, loss: 1.6211986161873861, error: 2.1706922566330444
+i= 4900
+Epoch 4900, loss: 1.6205533848550295, error: 2.1898859312221863
+i= 5000
+Epoch 5000, loss: 1.610386377023859, error: 2.180080232136736
+i= 5100
+Epoch 5100, loss: 1.6023103976882682, error: 2.19778727071527
+i= 5200
+Epoch 5200, loss: 1.5996096292465496, error: 2.174860827656097
+i= 5300
+Epoch 5300, loss: 1.5992027834464564, error: 2.1917410986065327
+i= 5400
+Epoch 5400, loss: 1.6223449307543574, error: 2.1658828841158204
+i= 5500
+Epoch 5500, loss: 1.6140685386536702, error: 2.191210181052537
+i= 5600
+Epoch 5600, loss: 1.596153988998472, error: 2.1855657962086683
+i= 5700
+Epoch 5700, loss: 1.6014709996139502, error: 2.1835788399602087
+i= 5800
+Epoch 5800, loss: 1.60307722754479, error: 2.1943939744293828
+i= 5900
+Epoch 5900, loss: 1.6158933493631882, error: 2.200991550444734
+i= 6000
+Epoch 6000, loss: 1.6057614025429947, error: 2.189303188159413
+i= 6100
+Epoch 6100, loss: 1.6205939096009159, error: 2.181682850283607
+i= 6200
+Epoch 6200, loss: 1.6122137304792268, error: 2.197524012300757
+i= 6300
+Epoch 6300, loss: 1.6199595373790967, error: 2.1820799693073347
+i= 6400
+Epoch 6400, loss: 1.594799944427481, error: 2.1842025577323656
+i= 6500
+Epoch 6500, loss: 1.5954660341586449, error: 2.1773379881785004
+i= 6600
+Epoch 6600, loss: 1.5962672535042526, error: 2.178162729665276
+i= 6700
+Epoch 6700, loss: 1.6169275434835704, error: 2.186754482562551
+i= 6800
+Epoch 6800, loss: 1.6081195070901475, error: 2.196083703537818
+i= 6900
+Epoch 6900, loss: 1.6020880007633547, error: 2.1670702497213967
+i= 7000
+Epoch 7000, loss: 1.5943580992907487, error: 2.2101551402816733
+i= 7100
+Epoch 7100, loss: 1.6000733044054811, error: 2.1888595830728814
+i= 7200
+Epoch 7200, loss: 1.606223207497096, error: 2.1912314529095407
+i= 7300
+Epoch 7300, loss: 1.59222012676543, error: 2.1819175895076572
+i= 7400
+Epoch 7400, loss: 1.6171567304697045, error: 2.192667807852712
+i= 7500
+Epoch 7500, loss: 1.6064752623820906, error: 2.1748915444715062
+i= 7600
+Epoch 7600, loss: 1.6494233692525537, error: 2.194189364489678
+i= 7700
+Epoch 7700, loss: 1.6127268401318093, error: 2.186832298165231
+i= 7800
+Epoch 7800, loss: 1.5985199591693235, error: 2.196573634711417
+i= 7900
+Epoch 7900, loss: 1.5929247306286733, error: 2.1727092437439115
+i= 8000
+Epoch 8000, loss: 1.6230267679985115, error: 2.189010885125736
+i= 8100
+Epoch 8100, loss: 1.5993863976105127, error: 2.173658649292501
+i= 8200
+Epoch 8200, loss: 1.6044903288993064, error: 2.171602203903248
+i= 8300
+Epoch 8300, loss: 1.600499334284518, error: 2.198859313108735
+i= 8400
+Epoch 8400, loss: 1.5969876061936685, error: 2.1981323442432035
+i= 8500
+Epoch 8500, loss: 1.6104251276529649, error: 2.18946029379706
+i= 8600
+Epoch 8600, loss: 1.6025655997327093, error: 2.178662620172158
+i= 8700
+Epoch 8700, loss: 1.6080650672781323, error: 2.1680336022252797
+i= 8800
+Epoch 8800, loss: 1.599575467750466, error: 2.1614864016860453
+i= 8900
+Epoch 8900, loss: 1.6025042285193574, error: 2.166921396893634
+i= 9000
+Epoch 9000, loss: 1.624617488945965, error: 2.198497002020349
+i= 9100
+Epoch 9100, loss: 1.6244018838987024, error: 2.1714698153024683
+i= 9200
+Epoch 9200, loss: 1.5957823667657227, error: 2.175216158679576
+i= 9300
+Epoch 9300, loss: 1.5989307794136556, error: 2.1736134036432313
+i= 9400
+Epoch 9400, loss: 1.6034166208984286, error: 2.197396654719479
+i= 9500
+Epoch 9500, loss: 1.607603000050449, error: 2.1810911758984175
+i= 9600
+Epoch 9600, loss: 1.6039401430026716, error: 2.178200731937068
+i= 9700
+Epoch 9700, loss: 1.6178025127933773, error: 2.195267870050105
+i= 9800
+Epoch 9800, loss: 1.5949416268007037, error: 2.1941594498828954
+i= 9900
+Epoch 9900, loss: 1.621521382169369, error: 2.1856938165740925
+i= 10000
+Epoch 10000, loss: 1.6148516054657331, error: 2.182862543783975
