@@ -1,0 +1,23 @@
+{'loss_params': {'lamb': 1.0, 'mu': 1.0}, 'solution_net_params': {'activation': 'tanh', 'net_type': 'mynet', 'net_dim': 3, 'out_dim': 1, 'width_list': [16, 32, 64, 32, 16], 'r0': 0.5}, 'sampler_params': {'sampler_type': 'spatial', 'batch_size_domain': 10000, 'batch_size_bound': 5000, 'batch_size_interface': 2000, 'r0': 0.5}, 'testsampler_params': {'sampler_type': 'spatial', 'batch_size_domain': 100000, 'batch_size_bound': 1, 'batch_size_interface': 1, 'r0': 0.5}, 'adam_optim_params': {'lr': 0.005, 'weight_decay': 0.0}, 'train_params': {'num_epochs': 1, 'perepoch_steps': 50000, 'output_path': '.'}}
+Traceback (most recent call last):
+  File "/home/ET/thhu/interface/PINN/Example1/example_optimal_source.py", line 26, in <module>
+    main()
+  File "/home/ET/thhu/interface/PINN/Example1/example_optimal_source.py", line 22, in main
+    model.train()
+  File "/home/ET/thhu/interface/PINN/Example1/Nonsys/Nonsys/model.py", line 150, in train
+    self._save_results(plot_samples)
+  File "/home/ET/thhu/interface/PINN/Example1/Nonsys/Nonsys/model.py", line 134, in _save_results
+    sio.savemat(os.path.join(self.output_path, "solution" + str(self.save_int) + ".mat"), {"samples": plot_samples_copy.detach().numpy(),
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first.
+{'loss_params': {'lamb': 1.0, 'mu': 1.0}, 'solution_net_params': {'activation': 'tanh', 'net_type': 'mynet', 'net_dim': 3, 'out_dim': 1, 'width_list': [16, 32, 64, 32, 16], 'r0': 0.5}, 'sampler_params': {'sampler_type': 'spatial', 'batch_size_domain': 10000, 'batch_size_bound': 5000, 'batch_size_interface': 2000, 'r0': 0.5}, 'testsampler_params': {'sampler_type': 'spatial', 'batch_size_domain': 100000, 'batch_size_bound': 1, 'batch_size_interface': 1, 'r0': 0.5}, 'adam_optim_params': {'lr': 0.005, 'weight_decay': 0.0}, 'train_params': {'num_epochs': 1, 'perepoch_steps': 50000, 'output_path': '.'}}
+Traceback (most recent call last):
+  File "/home/ET/thhu/interface/PINN/Example1/example_optimal_source.py", line 26, in <module>
+    main()
+  File "/home/ET/thhu/interface/PINN/Example1/example_optimal_source.py", line 22, in main
+    model.train()
+  File "/home/ET/thhu/interface/PINN/Example1/Nonsys/Nonsys/model.py", line 168, in train
+    solution_error = solution_error.detach().numpy()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first.
+{'loss_params': {'lamb': 1.0, 'mu': 1.0}, 'solution_net_params': {'activation': 'tanh', 'net_type': 'mynet', 'net_dim': 3, 'out_dim': 1, 'width_list': [16, 32, 64, 32, 16], 'r0': 0.5}, 'sampler_params': {'sampler_type': 'spatial', 'batch_size_domain': 10000, 'batch_size_bound': 5000, 'batch_size_interface': 2000, 'r0': 0.5}, 'testsampler_params': {'sampler_type': 'spatial', 'batch_size_domain': 100000, 'batch_size_bound': 1, 'batch_size_interface': 1, 'r0': 0.5}, 'adam_optim_params': {'lr': 0.0005, 'weight_decay': 0.0}, 'train_params': {'num_epochs': 1, 'perepoch_steps': 50000, 'output_path': '.'}}
